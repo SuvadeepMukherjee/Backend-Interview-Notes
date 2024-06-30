@@ -5,7 +5,7 @@ https://boulder-earwig-bb4.notion.site/Node-79031dbc909f4e0892b09b1de44cb5f0?pvs
 
 
 
-### What is the difference between realtive path and absolute path ? 
+### Q1: What is the difference between realtive path and absolute path ? 
 
 **Answer**: Following are the differences between relative path and ansolute path 
 
