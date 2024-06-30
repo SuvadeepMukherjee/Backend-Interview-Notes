@@ -8,7 +8,7 @@
 
 **Answer**: 
 
-![](/Users/suvadeep/Desktop/Screenshot 2024-06-30 at 8.48.10 PM.png)
+![Node runtime](/Users/suvadeep/Desktop/Screenshot 2024-06-30 at 8.48.10 PM.png)
 
 - **External dependencies** — such as V8, libuv, crypto — required by Node.js for its functioning
 - **C++ features** that provide for functionality such as file system access and networking
