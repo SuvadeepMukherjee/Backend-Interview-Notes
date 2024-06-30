@@ -5,7 +5,9 @@ https://boulder-earwig-bb4.notion.site/Node-79031dbc909f4e0892b09b1de44cb5f0?pvs
 
 
 
-###### What is the difference between realtive path and absolute path ? 
+### What is the difference between realtive path and absolute path ? 
+
+**Answer**: Following are the differences between relative path and ansolute path 
 
 - Relative path: Specifies the location of a file or directory *relative* to the current working directory.
 - Absolute path: Specifies the *complete path* of a file or directory from the root directory of the file system.
