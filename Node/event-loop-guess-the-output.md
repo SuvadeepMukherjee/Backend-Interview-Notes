@@ -207,3 +207,20 @@ setTimeout(() => console.log("this is setTimeout 3"), 0);
 **Answer**: The following image shows the output 
 
 ![exp-5](../assets/exp-5.png)
+
+### Q9:Experiment 6 Guess the output of below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+fs.readFile(__filename, () => {
+
+  console.log("this is readFile 1");
+
+});
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+```
+
