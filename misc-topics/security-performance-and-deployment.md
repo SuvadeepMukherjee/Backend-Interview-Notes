@@ -2,23 +2,23 @@
 
 ###  Q1: What is XSS(Cross-Site Scripting) attack ? 
 
-**Answer**: XSS(Cross-Site Scripting) is a security attack when a hacker insert some malicious script code in input fields to steal or manipulate content 
+**Answer**: XSS(Cross-Site Scripting) is a security attack when a hacker insert some *malicious script code in input fields* to steal or manipulate content 
 
 ![xxx-attack](../assets/xxx-attack.png)
 
 ### Q2: How to prevent XSS attcaks ? 
 
-**Answer**: sanitize-html module is a library for Node.js that sanitises HTML input by removing potientially malicious code, helping prevent Cross-Site Scripting (XSS) attacks
+**Answer**: *sanitize-html* module is a library for Node.js that sanitises HTML input by removing potientially malicious code, helping prevent Cross-Site Scripting (XSS) attacks
 
 ### Q3: What is SQL Injection attack ?
 
-**Answer**: SQL Injection is a security attcak when a hacker insert some malicious SQL script code in input fields to steal or manipulate content 
+**Answer**: SQL Injection is a security attcak when a hacker insert some *malicious SQL script code* in input fields to steal or manipulate content 
 
 ![sql-injection](../assets/sql-injection.png)
 
 ### Q4: How do you prevent SQL injection attacks in Node ? 
 
-- Use Parameterized Queries with Prepared Statements 
+- Use *Parameterized Queries with Prepared Statements* 
 - Do not use dynamic queries 
 
 ```javascript
@@ -63,13 +63,13 @@ connection.end();
 
 **Answer**: We can improve performance of a node.js application with the following 
 
-1. Optimise database queries
-2. Use Asynchronous Operations
-3. Use Caching
-4. Implement Load Balancing 
-5. Enable Compression
-6. Use Streaming for i/o Operations
-7. Monitor Profile Peformance
+1. *Optimise database queries*
+2. Use *Asynchronous Operations*
+3. Use *Caching*
+4. Implement *Load Balancing* 
+5. Enable *Compression*
+6. Use *Streaming for i/o Operations*
+7. Monitor *Profile Peformance*
 
 ### Q6:How can you Deply a Node.js application ? 
 

@@ -45,7 +45,7 @@ try {
 //Finally block executed 
 ```
 
-### Q4: What us Error-First Callbacks ? 
+### Q4: What is Error-First Callbacks ? 
 
 **Answer**:Error-First Callbacks is a convention in Node.js for handling asynchronous operations.They are called Error-First Callbacks because the *first argument of a callback function is reserved for an error object*
 
