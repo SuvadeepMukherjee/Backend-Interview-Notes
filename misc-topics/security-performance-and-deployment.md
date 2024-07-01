@@ -12,7 +12,7 @@
 
 ### Q3: What is SQL Injection attack ?
 
-**Answer**: SQL Injection is a security attcak when a hacker insert some *malicious SQL script code* in input fields to steal or manipulate content 
+**Answer**: SQL Injection is a security attcak when a hacker insert some *malicious SQL script code in input fields* to steal or manipulate content 
 
 ![sql-injection](../assets/sql-injection.png)
 
