@@ -117,9 +117,9 @@ app.use((err, req, res, next) => {
 
 **Answer**:In case of multiple middleware , error handling middleware should be defined at last(after all other middleware) because when an error occurs express.js will search for the next error-handling middleware skipping any regular middleware  
 
-### Q11: What is built in middlewares  ? How to serve static files from Express.js 
+### Q11: What is built in middlewares  ? Give an example of a built in middleware in express ? 
 
-**Answer**:built in middlewares are built in functions inside express framework which provide common functionalities .express.static() middleware is used for serving static files 
+**Answer**:built in middlewares are built in functions inside express framework which provide common functionalities .example is express.static() middleware which is used for serving static files 
 
 ```javascript
 const express = require("express");
