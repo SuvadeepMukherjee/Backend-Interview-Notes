@@ -12,7 +12,7 @@
 | ----------- | ----------------------------------------- |
 | GET         | *Retreive data from a specified resource* |
 | POST        | *submit data* to be processed             |
-| PUT         | *update a resource *                      |
+| PUT         | *update a resource*                       |
 | DELETE      | *removal of a resource*                   |
 
 ### Q3: PUT vs PATCH 
