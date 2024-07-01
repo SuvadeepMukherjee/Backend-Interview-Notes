@@ -1,6 +1,6 @@
 # Event Loop Guess the output Questions 
 
-### Q: How the event loop Works ? 
+### Q1: How the event loop Works ? 
 
 **Answer**: Within the event loop , the sequence of execution follows certain rules .
 
@@ -18,7 +18,7 @@ If there are more callbacks to be processed at this point, the loop is kept aliv
 
 ![event-loop](../assets/event-loop.webp)
 
-### Q:Explain the Asynchronous Code Execution of the below code snippet ? 
+### Q2:Explain the Asynchronous Code Execution of the below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -43,3 +43,15 @@ At about 4ms, let's say that the file read task is completed in the thread pool.
 That is pushed to the call stack, "Second" is logged to the console, and the log function is popped off. As there are no more statements to execute in the callback function, it is popped off as well. There's no more code to run, so the global function is also popped off the stack.
 
 The console output is going to read "First", "Third", and then "Second".
+
+### Q3: Guess the output of below code snippet ? 
+
+```javascript
+console.log("console.log 1");
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+
+console.log("console.log 2"); 
+```
+
+**Answer**: The output will be *console.log 1 this is process.nextTick 1 console.log 2*
