@@ -46,7 +46,7 @@ app.listen(3000, () => {
 
 **Answer**: The next parameter is a callback function which is used to pass control to the next middleware function in the stack 
 
-### Q5: How to use middleware globally for a specific route 
+### Q5: Implement a  middleware globally for a specific route 
 
 **Answer**: use app.use(”/specificRoute”,myMiddleware) to use middleware globally for a specific route in express.js
 
@@ -63,8 +63,7 @@ const myMiddleware = (req, res, next) => {
 
   res.send("middleware for specific route");
 
-  next();
-
+  
 };
 
 //Use middleware globally for all users
