@@ -137,10 +137,10 @@ app.use(express.static("public"));
 
 | third party middleware | what purpose they serve ? |
 | ---------------------- | ------------------------- |
-| Morgan                 | Logging                   |
-| Helmet                 | Security                  |
-| Body-parser            | body parsing              |
-| Compression            | Compression               |
+| morgan                 | Logging                   |
+| helmet                 | Security                  |
+| body-parser            | body parsing              |
+| compression            | Compression               |
 
 ### Q13: Types of middleware 
 
