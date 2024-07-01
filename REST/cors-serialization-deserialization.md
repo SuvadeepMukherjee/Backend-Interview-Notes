@@ -54,7 +54,7 @@ app.use(
 
 ### Q5: How to Serialize in Node ? 
 
-**Answer**: Serialize a Javascript object into JSON format using JSON.stringify()
+**Answer**: Serialize a Javascript object into JSON format using `JSON.stringify()`
 
 ```javascript
 //Serialization (to JSON)
