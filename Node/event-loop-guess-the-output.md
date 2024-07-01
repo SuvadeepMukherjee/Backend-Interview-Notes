@@ -193,3 +193,17 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 **Answer**: The output is shown in the below diagram 
 
 ![exp4-output](../assets/exp4-output.png)
+
+### Q8: Experiment 5 Guess the output of below code snippet 
+
+```javascript
+setTimeout(() => console.log("this is setTimeout 1"), 1000);
+
+setTimeout(() => console.log("this is setTimeout 2"), 500);
+
+setTimeout(() => console.log("this is setTimeout 3"), 0);
+```
+
+**Answer**: The following image shows the output 
+
+![exp-5](../assets/exp-5.png)
