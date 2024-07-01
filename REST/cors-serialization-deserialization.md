@@ -70,7 +70,7 @@ console.log("Serialized JSON:", jsonStr);
 
 ### Q6: How to Deserialize in Node.js
 
-**Answer**: Deserialize a JSON string into a Javascript object using JSON.parse()
+**Answer**: Deserialize a JSON string into a Javascript object using `JSON.parse()`
 
 ```javascript
 //Deserialization (to JSON)
