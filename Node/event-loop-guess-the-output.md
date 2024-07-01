@@ -385,3 +385,23 @@ for (let i = 0; i < 2000000000; i++) {}
 **Answer**: The output is shown in the below image 
 
 ![experiment11](../assets/experiment11.png)
+
+### Q15: Experiment 12 Guess the output of below code snippet ? 
+
+```javascript
+setImmediate(() => console.log("this is setImmediate 1"));
+
+setImmediate(() => {
+
+  console.log("this is setImmediate 2");
+
+  process.nextTick(() => console.log("this is process.nextTick 1"));
+
+  Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+
+});
+
+setImmediate(() => console.log("this is setImmediate 3"));
+```
+
+**Answer**: 
