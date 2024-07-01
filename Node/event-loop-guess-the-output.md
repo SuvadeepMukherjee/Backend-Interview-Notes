@@ -242,6 +242,14 @@ fs.readFile(__filename, () => {
 });
 ```
 
-**Answer**: The output is shown in the below image 
+**Answer**: For setTimeout the calculation is capped at a maximum of 1 millisecond i.e even if we pass 0 millisecond it is overwritten to a 1 milisecond delay 
 
-![exp7](../assets/exp7.png)
+At the start of the event loop, Node.js needs to determine if the 1ms timer has elapsed or not. If the event loop enters the timer queue at 0.05ms and the 1ms callback hasn't been queued, control moves on to the I/O queue, executing the `readFile()` callback. In the next iteration of the event loop, the timer queue callback will be executed.
+
+On the other hand, if the CPU is busy and enters the timer queue at 1.01 ms, the timer will have elapsed and the callback function will be executed. Control will then proceed to the I/O queue, and the `readFile() `callback will be executed.
+
+Due to the uncertainty of how busy the CPU can be and the 0ms delay being overwritten as 1ms delay, we can never guarantee the order of execution between a 0ms timer and an I/O callback.
+
+Inference
+
+> When running `setTimeout()` with a delay of 0ms and an I/O async method, the order of execution can never be guaranteed.
