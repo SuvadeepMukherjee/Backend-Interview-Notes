@@ -2,7 +2,7 @@
 
 ### Q1: What is CORS in Restful APIs ? 
 
-**Answer**: CORS(Cross Origin Resource Sharing) is a security feature implemented in web browsers that restrict web pages or scripts from making requests to a different domain than the one that served the web page
+**Answer**: CORS(Cross Origin Resource Sharing) is a *security feature* implemented in web browsers that *restrict web pages or scripts from making requests to a different domain than the one that served the web page*
 
 ### Q2: How to remove CORS restrictions in RESTful APIs 
 
