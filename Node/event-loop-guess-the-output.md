@@ -134,3 +134,6 @@ Promise.resolve().then(() => {
 Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 ```
 
+**Answer**: The output will be the following 
+
+![exp3-output](../assets/exp3-output.png)
