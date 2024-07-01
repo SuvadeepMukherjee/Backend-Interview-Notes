@@ -2,7 +2,7 @@
 
 ### Q1: What is middleware in Express.js ? 
 
-**Answer**:a middleware in express.js is a function that handles HTTP requests , performs operations and passes control to the next middleware 
+**Answer**:a middleware in express.js is a function that handles HTTP requests .It can modify the request or end the request-response cycle
 
 ### Q2: How do you implement middleware in Express.js 
 
