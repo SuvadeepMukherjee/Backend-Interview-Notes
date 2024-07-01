@@ -44,7 +44,7 @@ That is pushed to the call stack, "Second" is logged to the console, and the log
 
 The console output is going to read `"First", "Third", and then "Second"`.
 
-### Experiment 1: Guess the output of below code snippet ? 
+### Q3:Experiment 1: Guess the output of below code snippet ? 
 
 ```javascript
 console.log("console.log 1");
@@ -56,7 +56,7 @@ console.log("console.log 2");
 
 **Answer**: The output will be `console.log 1 this is process.nextTick 1 console.log 2`
 
-### Experiment 2 : Guess the output of below code snippet ? 
+### Q4:Experiment 2 : Guess the output of below code snippet ? 
 
 ```javascript
 Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
@@ -65,3 +65,29 @@ process.nextTick(() => console.log("this is process.nextTick 1"));
 ```
 
 **Answer**: The output will be `this is process.nextTick 1 this is Promise.resolve 1`
+
+### Q5:Bonus Experiment : What will be the output of below code snippet ? 
+
+```javascript
+process.nextTick(() => console.log("this is process.nextTick 1"));
+process.nextTick(() => {
+  console.log("this is process.nextTick 2");
+  process.nextTick(() =>
+    console.log("this is the inner next tick inside next tick")
+  );
+});
+process.nextTick(() => console.log("this is process.nextTick 3"));
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+Promise.resolve().then(() => {
+  console.log("this is Promise.resolve 2");
+  process.nextTick(() =>
+    console.log("this is the inner next tick inside Promise then block")
+  );
+});
+Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
+```
+
+**Answer**: The output will be the following 
+
+![bonusExperiment](../assets/bonusExperiment.png)
