@@ -321,3 +321,30 @@ The control then proceeds to the check queue, where it finds one callback. It lo
 It appears that the microtask and timer queues are empty, but there is a callback in the I/O queue. The callback is executed, and "readFile 1" is finally logged to the console.
 
 This is why we see "setImmediate 1" logged before "readFile 1". This behavior actually occurred in our previous experiment as well, but we didn't have any further code to run, so we didn't observe it.
+
+### Q13: Experiment 10 Guess the output of below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+fs.readFile(__filename, () => {
+
+  console.log("this is readFile 1");
+
+  setImmediate(() => console.log("this is setImmediate 1"));
+
+});
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+for (let i = 0; i < 2000000000; i++) {}
+```
+
+**Answer**: The output is shown in the below code snippet 
+
+![experiment10](../assets/experiment10.png)
+
