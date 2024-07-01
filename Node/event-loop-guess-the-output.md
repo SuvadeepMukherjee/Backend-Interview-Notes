@@ -404,4 +404,7 @@ setImmediate(() => {
 setImmediate(() => console.log("this is setImmediate 3"));
 ```
 
-**Answer**: 
+**Answer**: The output is shown in the below code snippet 
+
+![Experiment12](../assets/Experiment12.png)
+
