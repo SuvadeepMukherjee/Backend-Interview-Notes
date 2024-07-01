@@ -4,14 +4,9 @@
 
 **Answer**:a middleware in express.js is a function that handles HTTP requests .It can modify the request or end the request-response cycle
 
-### Q2: How do you implement middleware in Express.js 
+### Q2:  Implement an application level middleware in Express.js that logs to the console "Midlleware executed"
 
-**Answer**: The follwing are the steps to implement middleware in Express
-
-1. Initialize an express application
-2. define a middleware function myMiddleware
-3. use app.use() to mount myMiddleware globally,meaning it will be executed for every incoming request to the middleware
-4. finally , we start the server by listening on a specified port using app.listen
+**Answer**: The following code snippet implements an application level middleware 
 
 ```javascript
 //Initialize an Express application
