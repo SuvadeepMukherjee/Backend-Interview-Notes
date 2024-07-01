@@ -224,3 +224,6 @@ process.nextTick(() => console.log("this is process.nextTick 1"));
 Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
 ```
 
+**Answer**: The output of the above code snippet is shown below
+
+![exp6](../assets/exp6.png)
