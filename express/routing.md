@@ -2,7 +2,7 @@
 
 ### Q1: What is routing in express ?
 
-**Answer**: routing is the process of directing incoming http requests to the appropriate handler functions based on the request method ( eg GET,POST) and the url path  
+**Answer**: routing is the process of directing incoming http requests to the appropriate handler function based on the request method ( eg GET,POST) and the url path  
 
 ### Q2: What is difference between middleware and routing 
 
