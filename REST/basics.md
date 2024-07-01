@@ -4,7 +4,7 @@
 
 **Answer**: REST aka *Representational State Transfer* is a *set of guidelines for creating APIs* 
 
-### Q2: What is Restful API ?
+### Q2: What is a Restful API ?
 
 **Answer**: api which follows *REST guidelines*
 
