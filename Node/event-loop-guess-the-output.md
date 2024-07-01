@@ -7,7 +7,7 @@
 1. Any callbacks in the microtask queue are executed. First, tasks in the nextTick queue and only then tasks in the promise queue.
 2. All callbacks within the timer queue are executed.
 3. Callbacks in the microtask queue (if present) are executed after every callback in the timer queue. First, tasks in the nextTick queue, and then tasks in the promise queue.
-4. All callbacks within the I/O queue are executed.
+4. All callbacks within the I/O queue are executed.(I/O events are polled and callback functions are added to the I/O queue only after the I/O is complete)
 5. Callbacks in the microtask queues (if present) are executed, starting with nextTickQueue and then Promise queue.
 6. All callbacks in the check queue are executed.
 7. Callbacks in the microtask queues (if present) are executed after every callback in the check queue. First, tasks in the nextTick queue, and then tasks in the promise queue.
@@ -277,3 +277,47 @@ for (let i = 0; i < 2000000000; i++) {}
 **Answer**: The output is shown in below code snippet 
 
 ![experiment8](../assets/experiment8.png)
+
+### Q12: Experiment 9 Guess the output of below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+fs.readFile(__filename, () => {
+
+  console.log("this is readFile 1");
+
+});
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+setImmediate(() => console.log("this is setImmediate 1"));
+
+for (let i = 0; i < 2000000000; i++) {}
+```
+
+**Answer**: The output is shown in the below image 
+
+![experiment9](../assets/experiment9.png)
+
+First, all functions are executed on the call stack, resulting in callbacks being queued up in the appropriate queues. However, the `readFile()` callback is not queued up at the same time. Let me explain why.
+
+When the control enters the event loop, the microtask queues are checked first for callbacks. In this case, there is one callback in each of the nextTick queue and the promise queue. The nextTick queue has priority, so we see "nextTick 1" logged first, followed by "Promise 1".
+
+Both queues are empty, and control moves to the timer queue. There is one callback, which logs "setTimeout 1" to the console.
+
+Now comes the interesting part. When the control reaches the I/O queue, we expect the `readFile()` callback to be present, right? After all, we have a long-running `for` loop, and `readFile()` should have completed by now.
+
+However, in reality, the event loop has to poll to check if I/O operations are complete, and it only queues up completed operation callbacks. This means that when the control enters the I/O queue for the first time, the queue is still empty.
+
+The control then proceeds to the polling part of the event loop, where it checks with `readFile()` if the task has been completed. `readFile()` confirms that it has, and the event loop now adds the associated callback function to the I/O queue. However, the execution has already moved past the I/O queue, and the callback has to wait for its turn to be executed.
+
+The control then proceeds to the check queue, where it finds one callback. It logs "setImmediate 1" to the console and then starts a new iteration because there is nothing else left to process in the current iteration of the event loop.
+
+It appears that the microtask and timer queues are empty, but there is a callback in the I/O queue. The callback is executed, and "readFile 1" is finally logged to the console.
+
+This is why we see "setImmediate 1" logged before "readFile 1". This behavior actually occurred in our previous experiment as well, but we didn't have any further code to run, so we didn't observe it.
