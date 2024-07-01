@@ -48,9 +48,9 @@ app.use(
 
 **Answer**:The following are the 3 types of serialization 
 
-1. Binary Serialization
-2. XML Serialization
-3. JSON Serialization
+1. *Binary Serialization*
+2. *XML Serialization*
+3. *JSON Serialization*
 
 ### Q5: How to Serialize in Node ? 
 
