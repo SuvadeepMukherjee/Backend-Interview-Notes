@@ -42,7 +42,7 @@ At about 4ms, let's say that the file read task is completed in the thread pool.
 
 That is pushed to the call stack, "Second" is logged to the console, and the log function is popped off. As there are no more statements to execute in the callback function, it is popped off as well. There's no more code to run, so the global function is also popped off the stack.
 
-The console output is going to read "First", "Third", and then "Second".
+The console output is going to read `"First", "Third", and then "Second"`.
 
 ### Experiment 1: Guess the output of below code snippet ? 
 
@@ -54,7 +54,7 @@ process.nextTick(() => console.log("this is process.nextTick 1"));
 console.log("console.log 2"); 
 ```
 
-**Answer**: The output will be *console.log 1 this is process.nextTick 1 console.log 2*
+**Answer**: The output will be `console.log 1 this is process.nextTick 1 console.log 2`
 
 ### Experiment 2 : Guess the output of below code snippet ? 
 
