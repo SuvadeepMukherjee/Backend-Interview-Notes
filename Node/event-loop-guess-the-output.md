@@ -227,3 +227,21 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
 **Answer**: The output of the above code snippet is shown below
 
 ![exp6](../assets/exp6.png)
+
+### Q10 Experiment 7 Guess the output of below code snippet 
+
+```javascript
+const fs = require("fs");
+
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+fs.readFile(__filename, () => {
+
+  console.log("this is readFile 1");
+
+});
+```
+
+**Answer**: The output is shown in the below image 
+
+![exp7](../assets/exp7.png)
