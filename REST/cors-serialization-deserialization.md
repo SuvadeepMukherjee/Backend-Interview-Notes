@@ -36,9 +36,13 @@ app.use(
 
 ### Q3: What is Serialization and Deserialization ? 
 
-**Answer**:Serialization is the process of converting an object into a format that can be stored,transmitted or reconstructyed later(json)
+**Answer**:The following table explains the difference between Serialization and Deserialization
 
-Deserialization is the process of converting serialized data such as binary/xml/json data back into an object
+| Serialization                                                | Deserialization                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Serialization is the process of *converting an object into a format that can be stored,transmitted or reconstructyed later(json)* | Deserialization is the process of converting *serialized data such as binary/xml/json data back into an object* |
+
+
 
 ### Q4: what are the types of Serialization 
 
