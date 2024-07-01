@@ -14,23 +14,23 @@
 
 **Answer**:The following are the various types of authentication
 
-1. Basic(Username and Password) Authentication
-2. API Key Authentication
-3. Token-based Authentication(JWT)
-4. Multi-factor Authentication(MFA)
-5. Certificate-based Authentication
+1. *Basic(Username and Password) Authentication*
+2. *API Key Authentication*
+3. *Token-based Authentication(JWT)*
+4. *Multi-factor Authentication(MFA)*
+5. *Certificate-based Authentication*
 
 ### Q3: What is Basic Authentication ? 
 
-**Answer**:In Basic Authentication , the user passes their credentials on a post request . At the Node Rest API-end , credentials are verified and response is sent back .The disdavantage of it is Basic Authentication sends credentials in plain text over the network , so it is not considered a secure method of authentication
+**Answer**:In Basic Authentication , the *user passes their credentials on a post request* . At the Node Rest API-end , credentials are verified and response is sent back .The disdavantage of it is Basic Authentication sends credentials in plain text over the network , so it is not considered a secure method of authentication
 
 ### Q4: What are the security risks associated with storing passwords in plain text in Node.js
 
-**Answer**:Storing passwords in plain text means that anyone with access to the storage location , such as a database ocan easily read and extract passwords
+**Answer**:Storing passwords in plain text means that anyone with access to the  database ocan easily read and extract passwords
 
 ### Q5:What is the role of Hashing and Salt in securing passwords ? 
 
-**Answer**:Hashing is the process of converting a password into a fixed-size string of characters using a mathematical algorithm , We generate salt by using bcrypt library (random string) 
+**Answer**:Hashing is the process of converting a password into a *fixed-size string of characters using a mathematical algorithm* , We generate *salt by using bcrypt library (random string)*
 
 ### Q6: What is API Key Authentication ? 
 
