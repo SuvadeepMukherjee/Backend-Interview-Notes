@@ -2,9 +2,13 @@
 
 ### Q1: What are Authentication and Authorization ? 
 
-**Answer**: Authentication is the process of verifying the identity of a user by validating their credentials such as username and password
+**Answer**: The following table explains the difference between Authentication and Authorization
 
-Authorization is the process of allowing an authenticated user access to resources .Authentication is always precedes to Authorization
+| Authentication                                               | Authorization                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Authentication is the process of verifying the identity of a user by *validating their credentials such as username and password* | Authorization is the process of *allowing an authenticated user access to resources* . |
+
+
 
 ### Q2: 5 types of Authentication 
 
