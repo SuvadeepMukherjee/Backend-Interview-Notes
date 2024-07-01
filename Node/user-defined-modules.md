@@ -33,7 +33,7 @@
 4. exports
 5. module
 
-### Q7: What are the 5 patterns of import-export patterns in Common JS ? 
+### Q7: What are the 6 patterns of import-export patterns in Common JS ? 
 
 **Answer**: The following code snippet highlights the 5 patterns of import-export patterns in CommonJS
 
