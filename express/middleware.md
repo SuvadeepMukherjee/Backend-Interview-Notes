@@ -99,7 +99,7 @@ app.listen(3000, () => {
 
 **Answer**: application-level middleware applies globally to all incoming requests in the entire express.js applications. router-level middleware applies only to specific routes , not all incoming requests
 
-### Q9: What is error handling middleware and how to implement it ? 
+### Q9: What is error handling middleware ? 
 
 **Answer**: error handling middleware in express is a special kind of middleware used to manage errors happening while handling incoming requests . To implement error handling in express define middleware with 4 parameters (err,req,res,next) ,here the additional error object parameter will be used for error handling 
 
