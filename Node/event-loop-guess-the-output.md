@@ -408,3 +408,16 @@ setImmediate(() => console.log("this is setImmediate 3"));
 
 ![Experiment12](../assets/Experiment12.png)
 
+### Q16 Experiment 13 Guess the output of below code snippet 
+
+```javascript
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+setImmediate(() => console.log("this is setImmediate 1"));
+```
+
+**Answer**: Due to the uncertainty of CPU usage, we can never guarantee the execution order between a 0ms timer and a check queue callback. For a more in-depth explanation, refer to [experiment 7](https://www.builder.io/blog/visualizing-nodejs-io-queue#experiment-7).
+
+Inference
+
+> The order of execution can never be guaranteed when running `setTimeout()` with a delay of 0ms and the `setImmediate()` method.
