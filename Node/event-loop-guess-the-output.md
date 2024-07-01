@@ -421,3 +421,29 @@ setImmediate(() => console.log("this is setImmediate 1"));
 Inference
 
 > The order of execution can never be guaranteed when running `setTimeout()` with a delay of 0ms and the `setImmediate()` method.
+
+### Q17:Experiment 14 Guess the output of below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+const readableStream = fs.createReadStream(__filename);
+
+readableStream.close();
+
+readableStream.on("close", () => {
+
+  console.log("this is from readableStream close event callback");
+
+});
+
+setImmediate(() => console.log("this is setImmediate 1"));
+
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+```
+
+**Answer**: The output is shown in the below image 
