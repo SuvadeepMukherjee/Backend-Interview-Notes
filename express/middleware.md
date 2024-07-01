@@ -101,7 +101,7 @@ app.listen(3000, () => {
 
 ### Q9: What is error handling middleware and how to implement it ? 
 
-**Answer**: error handling middleware in express is a special kind of middleware used to manage errors happening while handling incoming requests , to implement error handling in express define middleware with 4 parameters (err,req,res,next) ,here the additional error object parameter will be used for error handling 
+**Answer**: error handling middleware in express is a special kind of middleware used to manage errors happening while handling incoming requests . To implement error handling in express define middleware with 4 parameters (err,req,res,next) ,here the additional error object parameter will be used for error handling 
 
 ```javascript
 app.use((err, req, res, next) => {
