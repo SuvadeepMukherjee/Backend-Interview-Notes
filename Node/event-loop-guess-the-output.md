@@ -190,3 +190,6 @@ Promise.resolve().then(() => {
 Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 ```
 
+**Answer**: The output is shown in the below diagram 
+
+![exp4-output](../assets/exp4-output.png)
