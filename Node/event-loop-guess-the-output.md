@@ -17,3 +17,29 @@
 If there are more callbacks to be processed at this point, the loop is kept alive for one more run, and the same steps are repeated. On the other hand, if all callbacks are executed and there is no more code to process, the event loop exits.
 
 ![event-loop](../assets/event-loop.webp)
+
+### Q:Explain the Asynchronous Code Execution of the below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+console.log("First");
+
+fs.readFile(__filename, () => {
+
+  console.log("Second");
+
+});
+
+console.log("Third");
+```
+
+**Answer**: The main thread of execution always starts in the global scope. The global function is pushed onto the stack. Execution then comes to line 1. At 1ms, "First" is logged in the console, and the function is popped off the stack. Execution then moves on to line 3. At 2ms, the readFile method is pushed onto the stack. Since readFile is an asynchronous operation, it is off-loaded to libuv.
+
+JavaScript pops off the readFile method from the call stack because its job is done as far as the execution of line 3 is concerned. In the background, libuv starts to read the file contents on a separate thread. At 3ms, JavaScript proceeds to line 7, pushes the log function onto the stack, "Third" is logged to the console, and the function is popped off the stack.
+
+At about 4ms, let's say that the file read task is completed in the thread pool. The associated callback function is now executed on the call stack. Within the callback function, the log statement is encountered.
+
+That is pushed to the call stack, "Second" is logged to the console, and the log function is popped off. As there are no more statements to execute in the callback function, it is popped off as well. There's no more code to run, so the global function is also popped off the stack.
+
+The console output is going to read "First", "Third", and then "Second".
