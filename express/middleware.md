@@ -95,9 +95,9 @@ app.listen(3000, () => {
 4. Built in middleware
 5. Third party middleware
 
-### Q8: What is the difference between application-level and route-level middleware ? 
+### Q8: What is the difference between application-level and router-level middleware ? 
 
-**Answer**: application-level middleware applies globally to all incoming requests in the entire express.js applications. route-level middleware applies only to specific routes , not all incoming requests
+**Answer**: application-level middleware applies globally to all incoming requests in the entire express.js applications. router-level middleware applies only to specific routes , not all incoming requests
 
 ### Q9: What is error handling middleware and how to implement it ? 
 
