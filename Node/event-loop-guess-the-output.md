@@ -44,7 +44,7 @@ That is pushed to the call stack, "Second" is logged to the console, and the log
 
 The console output is going to read `"First", "Third", and then "Second"`.
 
-### Q3:Experiment 1: Guess the output of below code snippet ? 
+### Q3: Guess the output of below code snippet ? 
 
 ```javascript
 console.log("console.log 1");
@@ -56,7 +56,7 @@ console.log("console.log 2");
 
 **Answer**: The output will be `console.log 1 this is process.nextTick 1 console.log 2`
 
-### Q4:Experiment 2 : Guess the output of below code snippet ? 
+### Q4: Guess the output of below code snippet ? 
 
 ```javascript
 Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
@@ -66,7 +66,7 @@ process.nextTick(() => console.log("this is process.nextTick 1"));
 
 **Answer**: The output will be `this is process.nextTick 1 this is Promise.resolve 1`
 
-### Q5:Bonus Experiment : What will be the output of below code snippet ? 
+### Q5: What will be the output of below code snippet ? 
 
 ```javascript
 process.nextTick(() => console.log("this is process.nextTick 1"));
@@ -92,7 +92,7 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 
 ![bonusExperiment](../assets/bonusExperiment.png)
 
-### Q6 :Experiment 3 What will be the output of below code snippet ?  
+### Q6 :What will be the output of below code snippet ?  
 
 ```javascript
 setTimeout(() => console.log("this is setTimeout 1"), 0);
@@ -138,7 +138,7 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 
 ![exp3-output](../assets/exp3-output.png)
 
-### Q7:Experiment 4 Guess the output of below code snippet ? 
+### Q7: Guess the output of below code snippet ? 
 
 ```javascript
 setTimeout(() => console.log("this is setTimeout 1"), 0);
@@ -194,7 +194,7 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 3"));
 
 ![exp4-output](../assets/exp4-output.png)
 
-### Q8: Experiment 5 Guess the output of below code snippet 
+### Q8:  Guess the output of below code snippet 
 
 ```javascript
 setTimeout(() => console.log("this is setTimeout 1"), 1000);
@@ -208,7 +208,7 @@ setTimeout(() => console.log("this is setTimeout 3"), 0);
 
 ![exp-5](../assets/exp-5.png)
 
-### Q9:Experiment 6 Guess the output of below code snippet ? 
+### Q9: Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -228,7 +228,7 @@ Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
 
 ![exp6](../assets/exp6.png)
 
-### Q10 Experiment 7 Guess the output of below code snippet 
+### Q10  Guess the output of below code snippet 
 
 ```javascript
 const fs = require("fs");
@@ -254,7 +254,7 @@ Inference
 
 > When running `setTimeout()` with a delay of 0ms and an I/O async method, the order of execution can never be guaranteed.
 
-### Q11 Experiment 8 Guess the output of below code snippet ? 
+### Q11: Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -278,7 +278,7 @@ for (let i = 0; i < 2000000000; i++) {}
 
 ![experiment8](../assets/experiment8.png)
 
-### Q12: Experiment 9 Guess the output of below code snippet ? 
+### Q12: Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -322,7 +322,7 @@ It appears that the microtask and timer queues are empty, but there is a callbac
 
 This is why we see "setImmediate 1" logged before "readFile 1". This behavior actually occurred in our previous experiment as well, but we didn't have any further code to run, so we didn't observe it.
 
-### Q13: Experiment 10 Guess the output of below code snippet ? 
+### Q13:  Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -348,7 +348,7 @@ for (let i = 0; i < 2000000000; i++) {}
 
 ![experiment10](../assets/experiment10.png)
 
-### Q14: Experiment 11 Guess the output of below code snippet ? 
+### Q14: Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -386,7 +386,7 @@ for (let i = 0; i < 2000000000; i++) {}
 
 ![experiment11](../assets/experiment11.png)
 
-### Q15: Experiment 12 Guess the output of below code snippet ? 
+### Q15: Guess the output of below code snippet ? 
 
 ```javascript
 setImmediate(() => console.log("this is setImmediate 1"));
@@ -408,7 +408,7 @@ setImmediate(() => console.log("this is setImmediate 3"));
 
 ![Experiment12](../assets/Experiment12.png)
 
-### Q16 Experiment 13 Guess the output of below code snippet 
+### Q16  Guess the output of below code snippet 
 
 ```javascript
 setTimeout(() => console.log("this is setTimeout 1"), 0);
@@ -422,7 +422,7 @@ Inference
 
 > The order of execution can never be guaranteed when running `setTimeout()` with a delay of 0ms and the `setImmediate()` method.
 
-### Q17:Experiment 14 Guess the output of below code snippet ? 
+### Q17: Guess the output of below code snippet ? 
 
 ```javascript
 const fs = require("fs");
@@ -447,3 +447,6 @@ process.nextTick(() => console.log("this is process.nextTick 1"));
 ```
 
 **Answer**: The output is shown in the below image 
+
+![Experiment14](../assets/Experiment14.png)
+
