@@ -115,7 +115,7 @@ app.use((err, req, res, next) => {
 
 ### Q10: If you have 5 middleware then in which middleware you will do the error handling ? 
 
-**Answer**:In case of multiple middleware , error handling middleware should be defined at last(after all other middleware) because when an error occurs Express.js will search for the next error-handling middleware skipping any regular middleware or route handler 
+**Answer**:In case of multiple middleware , error handling middleware should be defined at last(after all other middleware) because when an error occurs express.js will search for the next error-handling middleware skipping any regular middleware  
 
 ### Q11: What is built in middlewares  ? How to serve static files from Express.js 
 
