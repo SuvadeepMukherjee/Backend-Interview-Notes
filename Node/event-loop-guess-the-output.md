@@ -253,3 +253,27 @@ Due to the uncertainty of how busy the CPU can be and the 0ms delay being overwr
 Inference
 
 > When running `setTimeout()` with a delay of 0ms and an I/O async method, the order of execution can never be guaranteed.
+
+### Q11 Experiment 8 Guess the output of below code snippet ? 
+
+```javascript
+const fs = require("fs");
+
+fs.readFile(__filename, () => {
+
+  console.log("this is readFile 1");
+
+});
+
+process.nextTick(() => console.log("this is process.nextTick 1"));
+
+Promise.resolve().then(() => console.log("this is Promise.resolve 1"));
+
+setTimeout(() => console.log("this is setTimeout 1"), 0);
+
+for (let i = 0; i < 2000000000; i++) {}
+```
+
+**Answer**: The output is shown in below code snippet 
+
+![experiment8](../assets/experiment8.png)
