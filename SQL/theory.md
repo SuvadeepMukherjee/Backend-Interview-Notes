@@ -45,3 +45,6 @@
 | ------- | ------------------------------ | ------------------------- |
 | purpose | *Identifies each row uniquely* | *Ensures data uniqueness* |
 
+### Q9: What is the use of UNION keyword in SQL ?
+
+**Answer**: The UNION keyword is used to *merge the results of multiple SELECT queries into a single result set*  
