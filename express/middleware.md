@@ -13,7 +13,7 @@
 
 ### Q3: What is the purpose of the next parameter in express.js 
 
-**Answer**: The next parameter is a callback function which is used to pass control to the next middleware function in the stack 
+**Answer**: The next parameter is a callback function which is used to *pass control to the next middleware function in the stack* 
 
 ### Q4: Implement a  middleware globally for a specific route 
 
