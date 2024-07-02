@@ -39,4 +39,9 @@
 | Check           | *Imposes conditions on data values allowed in a column for each row* |
 | Not Null        | *Requires a column to always have a value* , preventing NULL entries |
 
-###  
+###  Q8: Primary Key vs Unique ? 
+
+| Feature | Primary Key                    | Unique Constraint         |
+| ------- | ------------------------------ | ------------------------- |
+| purpose | *Identifies each row uniquely* | *Ensures data uniqueness* |
+
