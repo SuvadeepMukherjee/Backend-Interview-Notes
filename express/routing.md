@@ -50,7 +50,10 @@ app.listen(3000, () => {
 
 ### Q4: What are route handlers ? 
 
-**Answer**:route handlers is the second argument passed to app.get() or app.post() , route handler function is used to process the request and generate a response 
+**Answer**:The following are the salient points about route handler 
+
+1. *second argument passed* to app.get() or app.post() 
+2.  route handler function is used to *process the request and generate a response* 
 
 ```javascript
 //define a route for handling get requests
@@ -72,9 +75,10 @@ app.post("/login", (req, res, next) => {
 
 ### Q5: What are route parameters in express ? 
 
-**Answer**:route parameters in express.js allow us to capture dynamic values from the url paths
+**Answer**:Thefollowing are the salient points about route parameters 
 
-route parameters can be accessed by using `req.params` object
+1. route parameters in express.js allow us to *capture dynamic values from the url paths*
+2. route parameters can be accessed by using `req.params` object
 
 ```javascript
 const express = require("express");
