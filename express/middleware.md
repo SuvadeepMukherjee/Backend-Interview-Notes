@@ -109,14 +109,14 @@ app.use(express.static("public"));
 
 ### Q11: What are third party middlewares ? Give some examples 
 
-**Answer**: Third party middleware in express.js are modules developed by third party developers (not part of core express.js) 
+**Answer**: Third party middleware in express.js are modules *developed by third party developers (not part of core express.js) *
 
 | third party middleware | what purpose they serve ? |
 | ---------------------- | ------------------------- |
-| morgan                 | Logging                   |
-| helmet                 | Security                  |
-| body-parser            | body parsing              |
-| compression            | Compression               |
+| morgan                 | *Logging*                 |
+| helmet                 | *Security*                |
+| body-parser            | *body parsing*            |
+| compression            | *Compression*             |
 
 ### Q12: Types of middleware 
 
