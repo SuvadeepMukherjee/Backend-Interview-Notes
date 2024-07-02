@@ -100,32 +100,18 @@ app.listen(3000, () => {
 });
 ```
 
-### Q6: What are router object and router methods ? 
+### Q6: What are router object ?
 
-**Answer**:The router object is a mini version of an express application which is used for handling routes , router methods are functions provided by the router object to define routes for different http methods (GET,POST,DELETE,etc) 
+**Answer**:The router object is a *mini version of an express application which is used for handling routes*  
 
-### Q7: What are the types of router methods ? 
+### Q7: Write 4  router methods ? 
 
-**Answer**: router.get() , router.post() , router.put() , router.delete()
+**Answer**: `router.get()` ,` router.post()` , `router.put()` , `router.delete()`
 
-### Q8: What is the difference between app.get() and router.get() ? 
+### Q9: What is route chaining ? 
 
-**Answer**: The following table describes the difference between app.get() and router.get()
+**Answer**: route chaining is a process of *defining multiple route handlers for a single route* 
 
-| app.get()                                                    | router.get()                                                 |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The app.get() method is used to define routes directly on the application object | The router.get() method is used to define routes on a router object |
-| routes defined using app.get() are automatically mounted on the route path | routes defined using router.get() are not automatically mounted , they must be explicitly mounted using app.use() |
-| routes defined using app.get() are not modular and cannot be reused in other application | outes defined using router.get()  are not automatically mounted , they must be explcitly mounted using app.use() |
+### Q10: What is route nesting ? 
 
-### Q9: What is express.router() in express.js 
-
-**Answer**:express.router() is a class in express.js that returns a new router object 
-
-### Q10: What is route chaining ? 
-
-**Answer**: route chaining is a process of defining multiple route handlers for a single route 
-
-### Q11: What is route nesting ? 
-
-**Answer**: route nesting organize routes hierarchically by grouping related routes under a common prefix
+**Answer**: route nesting *organize routes hierarchically by grouping related routes under a common prefix*
