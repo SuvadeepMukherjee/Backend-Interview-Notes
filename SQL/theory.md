@@ -21,6 +21,10 @@
 
 **Answer**: *Automatic actions* that occur in response to certain events like *inserting, updating or deleting data in a table*
 
-### Q5: What is blob ? 
+### Q5: What is a blob ? 
 
 **Answer**: blob is used for storing *large binary objects*  such as *images or files*
+
+### Q6:What is a text ? 
+
+**Answer**: text is *used for storing large text strings* 
