@@ -124,10 +124,10 @@ app.use(express.static("public"));
 
 | Middleware                   | Purpose                                                      |
 | ---------------------------- | ------------------------------------------------------------ |
-| application-level middleware | middleware applied to all routes                             |
-| router-level-middleware      | middleware specific to certain routes                        |
-| built-in-middleware          | pre-packaged middleware included with express.js , like for serving static files |
-| error-handling middleware    | middleware for handling errors , declared after other middleware , triggered on errors |
+| application-level middleware | middleware *applied to all routes*                           |
+| router-level-middleware      | middleware *specific to certain routes*                      |
+| built-in-middleware          | *pre-packaged middleware included with express.js* , like for serving static files |
+| error-handling middleware    | *middleware for handling errors* , declared after other middleware , triggered on errors |
 
  
 
