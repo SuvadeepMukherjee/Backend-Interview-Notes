@@ -13,4 +13,6 @@
 
 **Answer**: Creating a *data structure* that enhances the *speed of data retreival operations on a table*
 
-### 
+### What are views ? 
+
+**Answer**: *virtual tables that display data retreived from one or more actual tables* , but they *do not store any data themselves*
