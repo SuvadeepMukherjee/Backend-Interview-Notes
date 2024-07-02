@@ -14,9 +14,9 @@
 
 ### Q3: Define 2 routes 
 
-1. ### GET request on this route "/" it responds to `Hello World` 
+1. ### GET request on  route "/"  respond with  Hello World 
 
-2. ### POST request on this route "/login" it responds with "login Successfull"
+2. ### POST request on  route "/login" respond with "login Successfull"
 
 **Answer**:The following code snippet describes the way to implement routing in express
 
