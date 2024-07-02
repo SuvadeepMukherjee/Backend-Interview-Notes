@@ -18,7 +18,7 @@
 | ------------------------------------ | -------------------------- | -------------------------------------------------- |
 | *Not handling transactions properly* | *Data integrity issues*    | *Use transactions correctly*                       |
 | *Storing unnecessary blobs*          | *Bloats storage*           | *Store blobs in a dedicated storage*               |
-| *Using SELECT **                     | *Fetches unnecessary data* | specify *needed columns* in SELECT statements      |
+| Using SELECT *                       | *Fetches unnecessary data* | specify *needed columns* in SELECT statements      |
 | *Improper indexing*                  | *Slow Query performance*   | *create necessary indexes* based on query patterns |
 | *Ignoring normalization*             | *data redundancy*          | *apply proper normalization techniques*            |
 
