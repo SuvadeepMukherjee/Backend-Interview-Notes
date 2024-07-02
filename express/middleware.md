@@ -15,7 +15,7 @@
 
 **Answer**: The next parameter is a callback function which is used to *pass control to the next middleware function in the stack* 
 
-### Q4: Implement a  middleware globally for a specific route say `"/exapmple"`
+### Q4: Implement a  middleware globally for a specific route say `"/example"`
 
 **Answer**: use `app.use(”/specificRoute”,myMiddleware)` to use middleware globally for a specific route in express.js
 
