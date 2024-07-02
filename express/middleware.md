@@ -9,7 +9,7 @@
 
 ### Q2: What is the purpose of the app.use() function in express ? 
 
-**Answer**: The app.use() method is used to execute (mount) middleware functions gloabally 
+**Answer**: The app.use() method is used to *mount middleware functions gloabally* 
 
 ### Q3: What is the purpose of the next parameter in express.js 
 
