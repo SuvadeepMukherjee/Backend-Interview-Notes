@@ -43,7 +43,7 @@
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scalability         | *vertical scaling*                                           | *horizontal scaling*                                         |
 | Complex Queries     | *supports complex queries*                                   | *limited support for complex queries*                        |
-| Transaction support | ACID Compliance (Atomicity,Consistency,Isolation,Durability) | BASE Compliance (Basically Available ,Soft state,Eventual Consistency) |
-| Performance         | Good for complex queries                                     | High Performance for large-scale distributed data            |
-| Data Integrity      | High data integrity                                          | Less data Integrity                                          |
+| Transaction support | *ACID* Compliance (Atomicity,Consistency,Isolation,Durability) | *BASE* Compliance (Basically Available ,Soft state,Eventual Consistency) |
+| Performance         | Good for *complex queries*                                   | High Performance for *large-scale distributed data*          |
+| Data Integrity      | *High data integrity*                                        | *Less data Integrity*                                        |
 
