@@ -17,7 +17,7 @@
 
 ### Q4: Implement a  middleware globally for a specific route 
 
-**Answer**: use app.use(”/specificRoute”,myMiddleware) to use middleware globally for a specific route in express.js
+**Answer**: use `app.use(”/specificRoute”,myMiddleware)` to use middleware globally for a specific route in express.js
 
 ```javascript
 //Initialize an Express application
@@ -30,12 +30,12 @@ const app = express();
 
 const myMiddleware = (req, res, next) => {
 
-  res.send("middleware for specific route");
+  console.log("middleware for specific route");
 
   
 };
 
-//Use middleware globally for all users
+//Use middleware globally for all users on "/example" route
 
 app.use("/example", myMiddleware);
 
