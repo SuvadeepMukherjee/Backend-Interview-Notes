@@ -20,3 +20,7 @@
 ### Q4:What are MySQL Triggers ? 
 
 **Answer**: *Automatic actions* that occur in response to certain events like *inserting, updating or deleting data in a table*
+
+### Q5: What is blob ? 
+
+**Answer**: blob is used for storing *large binary objects*  such as *images or files*
