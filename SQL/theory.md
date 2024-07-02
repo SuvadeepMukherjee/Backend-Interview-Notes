@@ -47,4 +47,8 @@
 
 ### Q9: What is the use of UNION keyword in SQL ?
 
-**Answer**: The UNION keyword is used to *merge the results of multiple SELECT queries into a single result set*  
+**Answer**: The UNION keyword is used to *merge the results of multiple SELECT queries into a single result set*
+
+### Q10: What is normalisation of database ?
+
+**Answer**: Process of dividing large table into smaller tables and defining relations between them
