@@ -48,17 +48,7 @@ app.listen(3000, () => {
 });
 ```
 
-#### Q4: How to handle routing in express.js real applications ? 
-
-**Answer**:The following are the steps to handle routing in express.js real applications
-
-1. import express
-2. set middlewares
-3. import controllers
-4. define routes for different end points
-5. start the server
-
-### Q5: What are route handlers ? 
+### Q4: What are route handlers ? 
 
 **Answer**:route handlers is the second argument passed to app.get() or app.post() , route handler function is used to process the request and generate a response 
 
@@ -80,7 +70,7 @@ app.post("/login", (req, res, next) => {
 });
 ```
 
-### Q6: What are route parameters in express ? 
+### Q5: What are route parameters in express ? 
 
 **Answer**:route parameters in express.js allow us to capture dynamic values from the url paths
 
@@ -106,15 +96,15 @@ app.listen(3000, () => {
 });
 ```
 
-### Q7: What are router object and router methods ? 
+### Q6: What are router object and router methods ? 
 
 **Answer**:The router object is a mini version of an express application which is used for handling routes , router methods are functions provided by the router object to define routes for different http methods (GET,POST,DELETE,etc) 
 
-### Q8: What are the types of router methods ? 
+### Q7: What are the types of router methods ? 
 
 **Answer**: router.get() , router.post() , router.put() , router.delete()
 
-### Q9: What is the difference between app.get() and router.get() ? 
+### Q8: What is the difference between app.get() and router.get() ? 
 
 **Answer**: The following table describes the difference between app.get() and router.get()
 
@@ -124,14 +114,14 @@ app.listen(3000, () => {
 | routes defined using app.get() are automatically mounted on the route path | routes defined using router.get() are not automatically mounted , they must be explicitly mounted using app.use() |
 | routes defined using app.get() are not modular and cannot be reused in other application | outes defined using router.get()  are not automatically mounted , they must be explcitly mounted using app.use() |
 
-### Q10: What is express.router() in express.js 
+### Q9: What is express.router() in express.js 
 
 **Answer**:express.router() is a class in express.js that returns a new router object 
 
-### Q11: What is route chaining ? 
+### Q10: What is route chaining ? 
 
 **Answer**: route chaining is a process of defining multiple route handlers for a single route 
 
-### Q12: What is route nesting ? 
+### Q11: What is route nesting ? 
 
 **Answer**: route nesting organize routes hierarchically by grouping related routes under a common prefix
