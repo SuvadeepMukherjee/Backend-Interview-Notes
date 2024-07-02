@@ -135,8 +135,8 @@ app.use(express.static("public"));
 
 **Answer**: The following are the advantages of using middleware 
 
-1. Modularity ⇒ middleware allows us to modularize our applications functionality into smaller, self-contained units .Each middleware function can handle a specific task or concern such as logging,authentication or error-handling
-2. Reusability ⇒ middlewares can be reused at multiple places and that makes application code easier to maintain
-3. Improved request handling ⇒ middlewares functions have access to both the request(req) and response(res) objects which enables us to perform validations on request or modify the response before sending it back to the client
-4. Flexible control flow ⇒ middleware functions can be applied globally to all routes or selectively to specific routes allowing us to control the flow of request processing to our application
-5. Third party middlewares ⇒ express.js offers a wide range of third party middleware packages that provide additional functionality eg-body-parser,cors
+1. *Modularity* ⇒ middleware allows us to modularize our applications functionality into smaller, self-contained units .Each middleware function can handle a specific task or concern such as logging,authentication or error-handling
+2. *Reusability* ⇒ middlewares can be reused at multiple places and that makes application code easier to maintain
+3. *Improved request handling* ⇒ middlewares functions have access to both the request(req) and response(res) objects which enables us to perform validations on request or modify the response before sending it back to the client
+4. *Flexible control flow* ⇒ middleware functions can be applied globally to all routes or selectively to specific routes allowing us to control the flow of request processing to our application
+5. *Third party middlewares* ⇒ express.js offers a wide range of third party middleware packages that provide additional functionality eg-body-parser,cors
