@@ -27,4 +27,16 @@
 
 ### Q6:What is a text ? 
 
-**Answer**: text is *used for storing large text strings* 
+**Answer**: text is *used for storing large text strings*
+
+### Q7:List 5 Constraint types and their definations 
+
+| Constraint Type | Definition                                                   |
+| --------------- | ------------------------------------------------------------ |
+| Primary Key     | Ensures each row in *uniquely identified*                    |
+| Foreign Key     | *Links two tables*                                           |
+| Unique          | *Ensures values in a column are unique*                      |
+| Check           | *Imposes conditions on data values allowed in a column for each row* |
+| Not Null        | *Requires a column to always have a value* , preventing NULL entries |
+
+###  
