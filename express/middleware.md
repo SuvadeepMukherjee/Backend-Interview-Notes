@@ -7,49 +7,15 @@
 - function that *handles HTTP requests*
 - *can modify the request or end the request-response cycle*
 
-### Q2:  Implement an application level middleware in Express.js that logs to the console "Midlleware executed"
-
-**Answer**: The following code snippet implements an application level middleware 
-
-```javascript
-//Initialize an Express application
-
-const express = require("express");
-
-const app = express();
-
-//Define middleware function
-
-const myMiddleware = (req, res, next) => {
-
-  res.send("Hello World");
-
-  next();
-
-};
-
-//Use middleware globally for all users
-
-app.use(myMiddleware);
-
-//Start the server
-
-app.listen(3000, () => {
-
-  console.log("Server is running on port 3000");
-
-});
-```
-
-### Q3: What is the purpose of the app.use() function in express ? 
+### Q2: What is the purpose of the app.use() function in express ? 
 
 **Answer**: The app.use() method is used to execute (mount) middleware functions gloabally 
 
-### Q4: What is the purpose of the next parameter in express.js 
+### Q3: What is the purpose of the next parameter in express.js 
 
 **Answer**: The next parameter is a callback function which is used to pass control to the next middleware function in the stack 
 
-### Q5: Implement a  middleware globally for a specific route 
+### Q4: Implement a  middleware globally for a specific route 
 
 **Answer**: use app.use(”/specificRoute”,myMiddleware) to use middleware globally for a specific route in express.js
 
@@ -82,13 +48,13 @@ app.listen(3000, () => {
 });
 ```
 
-### Q6: What is request pipeline in express ? 
+### Q5: What is request pipeline in express ? 
 
 **Answer**: The request pipeline in express.js is a series of middleware functions that handle incoming HTTP requests and pass control to the next function 
 
 ![request-pipeline](../assets/request-pipeline.png)
 
-### Q7: What are the types of middleware in express.js 
+### Q6: What are the types of middleware in express.js 
 
 **Answer**: The following are the various types of middleware in express.js
 
@@ -98,11 +64,11 @@ app.listen(3000, () => {
 4. Built in middleware
 5. Third party middleware
 
-### Q8: What is the difference between application-level and router-level middleware ? 
+### Q7: What is the difference between application-level and router-level middleware ? 
 
 **Answer**: application-level middleware applies globally to all incoming requests in the entire express.js applications. router-level middleware applies only to specific routes , not all incoming requests
 
-### Q9: What is error handling middleware ? 
+### Q8: What is error handling middleware ? 
 
 **Answer**: error handling middleware in express is a special kind of middleware used to manage errors happening while handling incoming requests . To implement error handling middleware in express define middleware with 4 parameters (err,req,res,next) ,here the additional error object parameter will be used for error handling 
 
@@ -116,11 +82,11 @@ app.use((err, req, res, next) => {
 });
 ```
 
-### Q10: If you have 5 middleware then in which middleware you will do the error handling ? 
+### Q9: If you have 5 middleware then in which middleware you will do the error handling ? 
 
 **Answer**:In case of multiple middleware , error handling middleware should be defined at last(after all other middleware) because when an error occurs express.js will search for the next error-handling middleware skipping any regular middleware  
 
-### Q11: What is built in middlewares  ? Give an example of a built in middleware in express ? 
+### Q10: What is built in middlewares  ? Give an example of a built in middleware in express ? 
 
 **Answer**:built in middlewares are built in functions inside express framework which provide common functionalities .example is express.static() middleware which is used for serving static files 
 
@@ -134,7 +100,7 @@ const app = express();
 app.use(express.static("public"));
 ```
 
-### Q12: What are third party middlewares ? Give some examples 
+### Q11: What are third party middlewares ? Give some examples 
 
 **Answer**: Third party middleware in express.js are modules developed by third party developers (not part of core express.js) 
 
@@ -145,7 +111,7 @@ app.use(express.static("public"));
 | body-parser            | body parsing              |
 | compression            | Compression               |
 
-### Q13: Types of middleware 
+### Q12: Types of middleware 
 
 **Answer**:The various types of middleware are explained in the follwing table 
 
@@ -158,7 +124,7 @@ app.use(express.static("public"));
 
  
 
-### Q14: Advantages of using middleware in express.js 
+### Q13: Advantages of using middleware in express.js 
 
 **Answer**: The following are the advantages of using middleware 
 
