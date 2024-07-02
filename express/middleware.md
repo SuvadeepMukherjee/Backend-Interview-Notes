@@ -59,11 +59,11 @@ app.listen(3000, () => {
 
 **Answer**: The following are the various types of middleware in express.js
 
-1. Application-level middleware
-2. Router-level middleware
-3. Error-handling middleware
-4. Built in middleware
-5. Third party middleware
+1. *Application-level middleware*
+2. *Router-level middleware*
+3. *Error-handling middleware*
+4. *Built in middleware*
+5. *Third party middleware*
 
 ### Q7: What is the difference between application-level and router-level middleware ? 
 
