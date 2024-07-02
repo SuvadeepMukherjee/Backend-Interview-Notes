@@ -35,3 +35,15 @@
 | Scaling Mechanism      | Scaling by *adding more machines to the network* | Scaling by *increasing resource per machine* |
 | Implementing Approach  | Typically achieved through *load balancing*      | Involves *upgrading CPU,RAM,storage*         |
 
+### List out 5 differences between Relational and Non-relational databases ? 
+
+**Answer**: The following table lists out 5 differences between Relational and Non-Relational Databases
+
+| Criteria            | Relational Database                                          | Non Relational Database                                      |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Scalability         | *vertical scaling*                                           | *horizontal scaling*                                         |
+| Complex Queries     | *supports complex queries*                                   | *limited support for complex queries*                        |
+| Transaction support | ACID Compliance (Atomicity,Consistency,Isolation,Durability) | BASE Compliance (Basically Available ,Soft state,Eventual Consistency) |
+| Performance         | Good for complex queries                                     | High Performance for large-scale distributed data            |
+| Data Integrity      | High data integrity                                          | Less data Integrity                                          |
+
