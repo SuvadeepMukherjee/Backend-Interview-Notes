@@ -95,7 +95,7 @@ app.use((err, req, res, next) => {
 
 ### Q10: What is built in middlewares  ? Give an example of a built in middleware in express ? 
 
-**Answer**:built in middlewares are built in functions inside express framework which provide common functionalities .example is express.static() middleware which is used for serving static files 
+**Answer**:built in middlewares are *built in functions inside express framework which provide common functionalities* .example is `express.static()` middleware which is *used for serving static files* 
 
 ```javascript
 const express = require("express");
