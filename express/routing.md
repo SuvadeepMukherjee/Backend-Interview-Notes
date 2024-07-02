@@ -25,7 +25,7 @@ const express = require("express");
 
 const app = express();
 
-//define a route for handling get requests
+//define a route for handling get requests on "/""
 
 app.get("/", (req, res, next) => {
 
@@ -33,7 +33,7 @@ app.get("/", (req, res, next) => {
 
 });
 
-//define a routes for handling post requests
+//define a routes for handling post requests on "/login"
 
 app.post("/login", (req, res, next) => {
 
