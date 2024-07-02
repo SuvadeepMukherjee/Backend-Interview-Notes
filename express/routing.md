@@ -2,7 +2,7 @@
 
 ### Q1: What is routing in express ?
 
-**Answer**: routing is the process of directing incoming http requests to the appropriate handler function based on the request method ( eg GET,POST) and the url path  
+**Answer**: routing is the process of *directing incoming http requests to the appropriate handler function based on the request method ( eg GET,POST) and the url path*  
 
 ### Q2: What is difference between middleware and routing 
 
@@ -10,9 +10,13 @@
 
 | Middleware                                                   | Routing                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| middlewares are functions that have access to request-response cycle | routing is the process of directing  incoming http requests to the appropriate handler function |
+| middlewares are functions that have access to request-response cycle , it *can modify the request or end the request-response cycle* | routing is the *process of directing  incoming http requests to the appropriate handler function based on the request method and path* |
 
-### Q3: How to implement routing ? How do you define routes in express.js 
+### Q3: Define 2 routes 
+
+1. ### GET request on this route "/" it responds to `Hello World` 
+
+2. ### POST request on this route "/login" it responds with "login Successfull"
 
 **Answer**:The following code snippet describes the way to implement routing in express
 
@@ -25,7 +29,7 @@ const app = express();
 
 app.get("/", (req, res, next) => {
 
-  res.send("Suvadeep");
+  res.send("Hello World");
 
 });
 
@@ -33,7 +37,7 @@ app.get("/", (req, res, next) => {
 
 app.post("/login", (req, res, next) => {
 
-  //handle logic
+  res.send("login Succesfull")
 
 });
 
