@@ -51,7 +51,7 @@ app.listen(3000, () => {
 
 ### Q5: What is request pipeline in express ? 
 
-**Answer**: The request pipeline in express.js is a series of middleware functions that handle incoming HTTP requests and pass control to the next function 
+**Answer**: The request pipeline in express.js is a *series of middleware functions that handle incoming HTTP requests and pass control to the next function* 
 
 ![request-pipeline](../assets/request-pipeline.png)
 
