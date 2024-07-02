@@ -4,7 +4,7 @@
 
 | Monolith Architecture                                        | Microservice Architecture                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| architectural style where an *application is built as a single,unified unit* | architectural style where an application is composed of small, independent services that communicate over a network |
+| architectural style where an *application is built as a single,unified unit* | architectural style where an *application is composed of small, independent services that communicate over a network* |
 
 ###  Q2: What is an antipattern in SQL ? 
 
@@ -14,13 +14,13 @@
 
 **Answer**: The following tables lists the 5 antipatterns,why is it a problem and their respective solution 
 
-| Antipattern                        | Why is it a problem        | Solution                                           |
-| ---------------------------------- | -------------------------- | -------------------------------------------------- |
-| Not handling Transactions Properly | *Data integrity issues*    | *Use transactions correctly*                       |
-| Storing Unnecessary Blobs          | *Bloats storage*           | *Store blobs in a dedicated storage*               |
-| Using SELECT *                     | *Fetches unnecessary data* | specify *needed columns* in SELECT statements      |
-| Improper Indexing                  | *Slow Query performance*   | *create necessary indexes* based on query patterns |
-| Ignoring Normalization             | *data redundancy*          | *apply proper normalization techniques*            |
+| Antipattern                          | Why is it a problem        | Solution                                           |
+| ------------------------------------ | -------------------------- | -------------------------------------------------- |
+| *Not handling transactions properly* | *Data integrity issues*    | *Use transactions correctly*                       |
+| *Storing unnecessary blobs*          | *Bloats storage*           | *Store blobs in a dedicated storage*               |
+| *Using SELECT **                     | *Fetches unnecessary data* | specify *needed columns* in SELECT statements      |
+| *Improper indexing*                  | *Slow Query performance*   | *create necessary indexes* based on query patterns |
+| *Ignoring normalization*             | *data redundancy*          | *apply proper normalization techniques*            |
 
 ### Q4: What is sharding ? 
 
