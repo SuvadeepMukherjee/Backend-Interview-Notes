@@ -397,3 +397,81 @@ WHERE
   AND age <= 35;
 ```
 
+#### Table for Q17,Q18,Q19,20
+
+**Employees**
+
+| EmployeeID | FirstName | LastName | DepartmentID |
+| ---------- | --------- | -------- | ------------ |
+| 1          | John      | Doe      | 10           |
+| 2          | Jane      | Smith    | 20           |
+| 3          | Bob       | Johnson  | 10           |
+| 4          | Alice     | Davis    | 30           |
+
+**Departments**
+
+| DepartmentID | DepartmentName |
+| ------------ | -------------- |
+| 10           | Sales          |
+| 20           | Marketing      |
+| 30           | HR             |
+| 40           | IT             |
+
+#### Q17:Write a SQL query to retrieve all employees FirstName along with their department names using an INNER JOIN. Order the results by `LastName` in ascending order.
+
+**Answer**: The SQL Query is provided below 
+
+```sql
+SELECT firstname,
+    departmentname
+FROM  employees
+    INNER JOIN departments
+        ON employees.departmentid = departments.departmentid
+ORDER BY lastname ASC 
+```
+
+
+
+#### Q18:Write a SQL query to retrieve all employees FirstName and their department names, including those employees who do not belong to any department, using a LEFT JOIN. Order the results by `LastName` in ascending order.
+
+**Answer**:The SQL Query is written below 
+
+```sql
+SELECT firstname,
+    departmentname
+FROM  employees
+    LEFT JOIN departments
+       ON employees.departmentid = departments.departmentid
+ORDER BY lastname ASC 
+```
+
+
+
+#### Q19:Write a SQL query to retrieve all departments and their employee FirstName, including those departments that do not have any employees, using a RIGHT JOIN. Order the results by `DepartmentName` in ascending order.
+
+**Answer**: The SQL Query is written below 
+
+```sql
+SELECT firstname,
+    departmentname
+FROM  employees
+    RIGHT JOIN departments
+        ON employees.departmentid = departments.departmentid
+ORDER BY departmentname ASC 
+```
+
+
+
+#### Q20:Write a SQL query to retrieve all employees and their department names, including employees without departments and departments without employees, using a FULL OUTER JOIN. Order the results by `LastName` in ascending order.
+
+**Answer**:  The SQL Query is written below 
+
+```sql
+SELECT firstname,
+    departmentname
+FROM  employees
+    full OUTER JOIN join Departments
+          ON employees.departmentid = Departments.departmentid
+ORDER BY lastname ASC 
+```
+
