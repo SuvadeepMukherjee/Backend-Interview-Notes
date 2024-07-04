@@ -475,3 +475,21 @@ FROM  employees
 ORDER BY lastname ASC 
 ```
 
+#### Q21:Create an index on the `age` column on the `Students` table shown below 
+
+**students**
+
+| id   | name    | age  | city        |
+| ---- | ------- | ---- | ----------- |
+| 1    | Alice   | 25   | New York    |
+| 2    | Bob     | 28   | Los Angeles |
+| 3    | Charlie | 22   | Chicago     |
+| 4    | David   | 30   | Houston     |
+| 5    | Eve     | 27   | Miami       |
+
+**Answer**: The SQL Query is shown below 
+
+```sql
+CREATE INDEX idx_age ON students (age); 
+```
+
