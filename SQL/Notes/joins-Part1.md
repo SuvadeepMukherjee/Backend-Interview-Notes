@@ -1,6 +1,6 @@
 
 
-## Joins Notes: 
+## Joins Notes Part 1: 
 
 The following table gives a simple defination of Inner,left and Right Join 
 
