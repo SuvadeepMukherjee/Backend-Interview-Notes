@@ -73,5 +73,29 @@ The result will be the following
 | James   | HR        |
 | Michael | HR        |
 
+### Q: Fetch all the Employee name and the department name they belong to 
 
+Left Join: inner join + any additional records in the left table 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name
+from
+  employee e
+  LEFT JOIN department d ON e.dept_id = d.dept_Id
+
+
+```
+
+The output will be the following : 
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| Ali      | NULL      |
+| Robin    | NULL      |
 
