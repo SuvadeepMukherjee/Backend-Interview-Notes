@@ -43,7 +43,7 @@ Projects Table
 | P2         | ETL Tool       | E1             |
 | P2         | ETL Tool       | M4             |
 
-
+### Q: Fetch the employee name and the department name they belong to ? 
 
 ### Inner Join 
 
