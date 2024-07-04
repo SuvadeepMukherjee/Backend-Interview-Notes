@@ -64,5 +64,14 @@ Department: D1,D2,D3,D4
 
 Common: D1,D2
 
+The result will be the following 
+
+| Name    | dept_name |
+| ------- | --------- |
+| Rahul   | IT        |
+| Manoj   | IT        |
+| James   | HR        |
+| Michael | HR        |
+
 
 
