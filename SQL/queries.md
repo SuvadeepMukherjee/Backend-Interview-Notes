@@ -368,3 +368,32 @@ OFFSET
   1;
 ```
 
+#### Q16:Given the `employees` table, write a SQL query to find out the data of employees whose age is between 25 and 35 inclusive.
+
+**Table: employees**
+
+| id   | name    | age  |
+| ---- | ------- | ---- |
+| 1    | Alice   | 28   |
+| 2    | Bob     | 30   |
+| 3    | Charlie | 32   |
+| 4    | David   | 35   |
+| 5    | Eve     | 22   |
+| 6    | Frank   | 27   |
+| 7    | Grace   | 31   |
+| 8    | Hank    | 36   |
+| 9    | Ivy     | 25   |
+| 10   | Jack    | 29   |
+
+**Answer**: The SQL Query is written below 
+
+```sql
+SELECT
+  *
+FROM
+  employees
+WHERE
+  age >= 25
+  AND age <= 35;
+```
+
