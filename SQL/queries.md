@@ -92,3 +92,15 @@ WHERE
   AND salary <= 100000;
 ```
 
+#### Q5: Given a table Employee having columns empName and empId, what will be the result of the SQL query below? 
+
+```sql
+SELECT
+  empName
+FROM
+  Employee
+ORDER by
+  2 ASC
+```
+
+**Answer**: orders the result set by the second column in the select list, which in this case is `empName`.
