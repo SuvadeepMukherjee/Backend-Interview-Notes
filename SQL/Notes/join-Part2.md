@@ -22,6 +22,12 @@ Department Table:
 | D3      | Finance   |
 | D4      | Admin     |
 
+Company table: 
+
+| Company_id | company_name      | Location     |
+| ---------- | ----------------- | ------------ |
+| C001       | techTFQ Solutions | Kuala lumpur |
+
 #### Full Outer Join 
 
 Full Outer Join = Inner Join + Left Join + Right Join 
@@ -49,4 +55,24 @@ The output will be the follwing:
 | Robin    | NULL      |
 | NULL     | Finance   |
 | NULL     | Admin     |
+
+#### Cross Join : 
+
+**Defination**: A **Cross Join** in SQL is a type of join that returns the Cartesian product of two tables. This means it combines each row from the first table with every row from the second table, resulting in a result set that contains all possible combinations of rows from both tables. Cross joins do not require any condition to join the tables.
+
+##### Q: Write a query to fetch the Employee table and their corresponding department name .Also make sure to display the company name and the company location corresponding to each employee 
+
+**Answer**: We write the follwing query 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name,
+  c.company_name,
+  c.location
+FROM
+  empoyee e
+  INNER JOIN department d ON e.dept_id = d.dept_id
+  CROSS JOIN company c;
+```
 
