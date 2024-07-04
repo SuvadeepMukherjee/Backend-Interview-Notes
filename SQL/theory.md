@@ -98,3 +98,7 @@
 #### Q16:What is a *deadlock* in SQL ? 
 
 **Answer**: A deadlock in SQL occurs when *two or more transactions are unable to proceed because each transaction is waiting for a resource that is held by another transaction*. This situation creates a cycle where each transaction is waiting for a resource that is locked by another transaction in the cycle, leading to a standstill where none of the transactions can continue.
+
+#### Q17:Is a blank space  the same as a NULL value?
+
+**Answer**: No because blank space is treated as a empty string
