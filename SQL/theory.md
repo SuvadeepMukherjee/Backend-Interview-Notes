@@ -95,3 +95,6 @@
 | **Isolation**   | Ensures that transactions are executed independently and are unaware of other transactions running concurrently. |
 | **Durability**  | Once a transaction is committed, its changes are permanently saved and can withstand system failures. |
 
+#### Q16:What is a *deadlock* in SQL ? 
+
+**Answer**: A deadlock in SQL occurs when *two or more transactions are unable to proceed because each transaction is waiting for a resource that is held by another transaction*. This situation creates a cycle where each transaction is waiting for a resource that is locked by another transaction in the cycle, leading to a standstill where none of the transactions can continue.
