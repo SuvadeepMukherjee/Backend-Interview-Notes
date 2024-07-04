@@ -84,3 +84,14 @@
 | `IN`      | Checks if a value matches any value in a list | Matches any value in the specified list.                     |
 | `BETWEEN` | Checks if a value is within a range           | Checks if a value falls within the specified range inclusive. |
 
+#### Q15:What is ACID in realtion to databases ?
+
+**Answer**:The following table explains the ACID properties of database transactions in a table format:
+
+| ACID Property   | Description                                                  |
+| --------------- | ------------------------------------------------------------ |
+| **Atomicity**   | Ensures that each transaction is treated as a single unit, either fully completed (committed) or fully aborted (rolled back) if an error occurs. |
+| **Consistency** | Guarantees that a transaction brings the database from one valid state to another valid state. |
+| **Isolation**   | Ensures that transactions are executed independently and are unaware of other transactions running concurrently. |
+| **Durability**  | Once a transaction is committed, its changes are permanently saved and can withstand system failures. |
+
