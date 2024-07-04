@@ -85,3 +85,24 @@ The output will be the following :
 | James    | HR        | techTFQ Solutions | kuala lampur |
 | Michael  | HR        | techTFQ Solutions | kuala lampur |
 
+#### Natural join 
+
+Natural Join = Cross join + condition(inner join )
+
+Sql will decide on the join condition based on common table names 
+
+```sql
+SELECT e.emp_name,d.dept_name 
+FROM employee e 
+NATURAL JOIN department d ;
+```
+
+In the above sql query the join condition will be dept_id 
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+
