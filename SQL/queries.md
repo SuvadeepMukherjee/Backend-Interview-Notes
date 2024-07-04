@@ -202,7 +202,7 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
-#### Q9:Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
+#### Q10:Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
 
 **Table: students**
 
