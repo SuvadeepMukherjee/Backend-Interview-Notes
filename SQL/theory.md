@@ -102,3 +102,7 @@
 #### Q17:Is a blank space  the same as a NULL value?
 
 **Answer**: No because blank space is treated as a empty string
+
+#### Q18:Explain the `COALESCE()` function in sql ?
+
+**Answer**: The `COALESCE()` function in SQL is used to return the first non-NULL value in a list of expressions
