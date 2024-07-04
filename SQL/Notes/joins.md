@@ -1,10 +1,20 @@
 
 
-## Joins Notes
+## Joins Notes: 
+
+The following table gives a simple defination of Inner,left and Right Join 
 
 
 
-###### Employee Table: 
+| Join       | Definition                                         |
+| ---------- | -------------------------------------------------- |
+| Inner Join | *Fectches matching records only*                   |
+| Left Join  | *Inner Join + additional records from left table*  |
+| Right Join | *Inner Join + additional records from right table* |
+
+Consider the following tables: 
+
+Employee Table: 
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -43,11 +53,7 @@ Projects Table
 | P2         | ETL Tool       | E1             |
 | P2         | ETL Tool       | M4             |
 
-### Q: Fetch the employee name and the department name they belong to ? 
-
-### Inner Join 
-
-**Fetch records that are present in both tables (only records that are getting matched based on the join condition will be fetched )**
+#### Inner Join 
 
 ```sql
 SELECT
@@ -58,11 +64,7 @@ FROM
   INNER JOIN Department ON Employee.dept_id = Department.dept_id
 ```
 
-Employee: D1,D2,D10
-
-Department: D1,D2,D3,D4
-
-Common: D1,D2
+Employee: D1,D2,D10 , Department: D1,D2,D3,D4 Common: D1,D2
 
 The result will be the following 
 
@@ -73,9 +75,7 @@ The result will be the following
 | James   | HR        |
 | Michael | HR        |
 
-### Q: Fetch all the Employee name and the department name they belong to 
-
-Left Join: inner join + any additional records in the left table 
+#### Left Join
 
 ```sql
 SELECT
@@ -99,11 +99,7 @@ The output will be the following :
 | Ali      | NULL      |
 | Robin    | NULL      |
 
-### Q: Fetch all the department and corresponding Employee name 
-
-Right Join : 
-
-Right Join = inner join + Any additional records in the right table 
+#### Right Join : 
 
 ```sql
 SELECT
@@ -125,3 +121,33 @@ The output will be the following
 | NULL     | Finance   |
 | NULL     | Admin     |
 
+#### Q: Fetch details of all employee, their manager , their department and the projects they work on 
+
+**Answer**: The sql query is shown in the follwing code snippet 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name,
+  m.manager_name,
+  p.project_name
+FROM
+  employee e
+  LEFT JOIN department d ON e.dept_id = d.dept_id
+  INNER JOIN manager m ON m.manager_id = e.manager_id
+  LEFT JOIN projects P ON p.team_member_id = e.emp_id; 
+```
+
+The output will be the follwing : 
+
+| emp_name | dept_name | manager_name | project_name   |
+| -------- | --------- | ------------ | -------------- |
+| Rahul    | IT        | Prem         | ETL Tool       |
+| Rahul    | IT        | Prem         | Data Migration |
+| Manoj    | IT        | Prem         | Data Migration |
+| James    | HR        | Shripadh     | NULL           |
+| Michael  | HR        | Shripadh     | NULL           |
+| Ali      | NULL      | Nick         | NULL           |
+| Robin    | NULL      | Nick         | NULL           |
+
+ 
