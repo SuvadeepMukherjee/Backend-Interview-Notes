@@ -70,3 +70,17 @@
 
 1. **Increased Storage Space:** Indexes require additional storage space on disk or in memory to store the index structures, which can increase storage requirements for the database.
 2. **Overhead on Data Modification:** Indexes need to be updated whenever data in the indexed columns is inserted, updated, or deleted. This overhead can slow down data modification operations (INSERT, UPDATE, DELETE).
+
+#### Q13:If we drop a table, does it also drop related objects like constraints, indexes, columns, default, views and sorted procedures?
+
+**Answer**: Yes 
+
+#### Q14: In a tabular form list the difference between IN and BETWEEN operator in sql ? 
+
+**Answer**: The following table lists the difference between IN and BETWEEN operator 
+
+| Operator  | Description                                   | Key Difference                                               |
+| --------- | --------------------------------------------- | ------------------------------------------------------------ |
+| `IN`      | Checks if a value matches any value in a list | Matches any value in the specified list.                     |
+| `BETWEEN` | Checks if a value is within a range           | Checks if a value falls within the specified range inclusive. |
+
