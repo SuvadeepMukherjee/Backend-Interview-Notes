@@ -2,7 +2,7 @@
 
 ## Joins Notes
 
-These are my notes related to joins 
+
 
 ###### Employee Table: 
 
@@ -98,4 +98,30 @@ The output will be the following :
 | Michael  | HR        |
 | Ali      | NULL      |
 | Robin    | NULL      |
+
+### Q: Fetch all the department and corresponding Employee name 
+
+Right Join : 
+
+Right Join = inner join + Any additional records in the right table 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name
+from
+  employee e
+  RIGHT JOIN department d ON e.dept_id = d.dept_Id
+```
+
+The output will be the following 
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| NULL     | Finance   |
+| NULL     | Admin     |
 
