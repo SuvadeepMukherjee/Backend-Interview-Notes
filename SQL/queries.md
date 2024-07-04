@@ -281,3 +281,28 @@ OFFSET
   104;
 ```
 
+#### Q13: Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
+
+**Table: users**
+
+| user_id | username  | email             | phone_number |
+| ------- | --------- | ----------------- | ------------ |
+| 1       | alice123  | alice@email.com   | NULL         |
+| 2       | bob456    | NULL              | 9876543210   |
+| 3       | charlie89 | charlie@email.com | NULL         |
+| 4       | david23   | NULL              | NULL         |
+| 5       | eve55     | eve@email.com     | 1234567890   |
+| 6       | frank78   | frank@email.com   | 8765432109   |
+
+**Answer**: The SQL Query is written below 
+
+```sql
+SELECT
+  *
+FROM
+  users
+WHERE
+  email IS NULL
+  AND phone_number IS NULL;
+```
+
