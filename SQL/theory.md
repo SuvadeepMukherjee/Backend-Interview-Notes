@@ -52,3 +52,21 @@
 ### Q10: What is normalisation of database ?
 
 **Answer**: Process of dividing large table into smaller tables and defining relations between them
+
+### Q11:What is  indexing  ?
+
+**Answer**: Indexing in databases is a technique used to *improve the speed of data retrieval operations on tables by creating a quick-access structure (index) on one or more columns.*
+
+#### Q12:List 2 advantages and 2 disadvantages of indexing ? 
+
+**Answer**: 
+
+**Advantages of Indexing:**
+
+1. **Faster Data Retrieval:** Indexing speeds up SELECT queries by allowing the database to quickly locate rows based on the indexed columns, rather than scanning the entire table.
+2. **Improved Performance for Joins:** Indexes can enhance the performance of JOIN operations by facilitating faster lookup and matching of rows across tables.
+
+**Disadvantages of Indexing:**
+
+1. **Increased Storage Space:** Indexes require additional storage space on disk or in memory to store the index structures, which can increase storage requirements for the database.
+2. **Overhead on Data Modification:** Indexes need to be updated whenever data in the indexed columns is inserted, updated, or deleted. This overhead can slow down data modification operations (INSERT, UPDATE, DELETE).
