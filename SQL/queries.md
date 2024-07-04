@@ -104,3 +104,26 @@ ORDER by
 ```
 
 **Answer**: orders the result set by the second column in the select list, which in this case is `empName`.
+
+#### Q6: Write an SQL query to delete the column `region` from the `employees` table.
+
+**Example Scenario:**
+
+You have a table named `employees` with the following structure:
+
+Table name: `employees`
+
+| id   | name   | salary | region |
+| ---- | ------ | ------ | ------ |
+| 1    | John   | 50000  | North  |
+| 2    | Alice  | 60000  | South  |
+| 3    | Bob    | 70000  | North  |
+| 4    | Amanda | 80000  | East   |
+
+**Answer**: The SQL statement is written below 
+
+```sql
+ALTER TABLE employees
+DROP COLUMN region;
+```
+
