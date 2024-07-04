@@ -46,3 +46,26 @@ OFFSET
   2;
 ```
 
+### Q3: display the number of employees working in each region
+
+Table name: `employees`
+
+| id   | name   | salary | region |
+| ---- | ------ | ------ | ------ |
+| 1    | John   | 50000  | North  |
+| 2    | Alice  | 60000  | South  |
+| 3    | Bob    | 70000  | North  |
+| 4    | Amanda | 80000  | East   |
+
+**Answer**: The query is written below 
+
+```sql
+SELECT
+  region,
+  COUNT(*) AS employee_count
+FROM
+  employees
+GROUP BY
+  region;
+```
+
