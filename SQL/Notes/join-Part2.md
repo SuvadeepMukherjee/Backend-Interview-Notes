@@ -76,3 +76,12 @@ FROM
   CROSS JOIN company c;
 ```
 
+The output will be the following : 
+
+| emp_name | dept_name | comapny_name      | Location     |
+| -------- | --------- | ----------------- | ------------ |
+| Rahul    | IT        | techTFQ Solutions | kuala lampur |
+| Manoj    | IT        | techTFQ Solutions | kuala lampur |
+| James    | HR        | techTFQ Solutions | kuala lampur |
+| Michael  | HR        | techTFQ Solutions | kuala lampur |
+
