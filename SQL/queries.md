@@ -1,6 +1,6 @@
 ## SQL Query Questions
 
-### Q1: Write a SQL Query that fetches the names of students whose name satrts with A .The *students* table is given below 
+### Q1: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below 
 
 | id   | name   | age  |
 | ---- | ------ | ---- |
