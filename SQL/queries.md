@@ -227,3 +227,28 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
+#### Q11:Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
+
+**Table: employees**
+
+| id   | name    | department |
+| ---- | ------- | ---------- |
+| 1    | Alice   | ECE        |
+| 2    | Bob     | CSE        |
+| 3    | Charlie | ECE        |
+| 4    | David   | Mech       |
+| 5    | Eve     | ECE        |
+| 6    | Frank   | EEE        |
+| 7    | Grace   | CSE        |
+
+**Answer**: The sql query is written below 
+
+```sql
+SELECT
+  *
+FROM
+  employees
+WHERE
+  department = 'ECE';
+```
+
