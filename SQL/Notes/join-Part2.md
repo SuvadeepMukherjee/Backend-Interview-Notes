@@ -22,3 +22,31 @@ Department Table:
 | D3      | Finance   |
 | D4      | Admin     |
 
+#### Full Outer Join 
+
+Full Outer Join = Inner Join + Left Join + Right Join 
+
+Example query : 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name
+FROM
+  employee e
+  FULL OUTER JOIN department d ON d.dept_id = e.dept_id;
+```
+
+The output will be the follwing: 
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| Ali      | NULL      |
+| Robin    | NULL      |
+| NULL     | Finance   |
+| NULL     | Admin     |
+

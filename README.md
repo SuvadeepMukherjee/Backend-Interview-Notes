@@ -1,3 +1,3 @@
 # Backend-Interview-Notes
 
-These are all the notes I made related to backend while I was preparing for my mock interview at [sharpener.tech](https://sharpener.tech) 🚀📚
+These are all the notes I’m making related to backend while preparing for my final mock interview at [sharpener.tech](https://sharpener.tech) 🚀📚✨
