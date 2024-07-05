@@ -119,13 +119,17 @@
 **Relationships**:
 
 - Relationships define *how entities are related to each other within the database*.
-
 - There are three main types of relationships:
-
   - **One-to-One**
   - **One-to-Many (or Many-to-One)**
   - **Many-to-Many**: 
+- Relationships are typically established using keys (primary and foreign keys)
 
-- Relationships are typically established using keys (primary and foreign keys):
+#### Q20:What are the different types of relationships ?
 
-  
+**Answer**: There are three Relationships
+
+1. **One to One Relationship**  say between a customers table (holding username and password) and the customers_details table(holding all the details of the customer )
+2. **One To Many Relkationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
+3. **Many to Many Relationship**  say between a books table and a authors table, a book can have multiple authors and an author can have multiple books
+
