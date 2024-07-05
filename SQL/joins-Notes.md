@@ -49,7 +49,14 @@ FROM
   INNER JOIN Department ON Employee.dept_id = Department.dept_id
 ```
 
+The result will be the following
 
+| Name    | dept_name |
+| ------- | --------- |
+| Rahul   | IT        |
+| Manoj   | IT        |
+| James   | HR        |
+| Michael | HR        |
 
 
 
