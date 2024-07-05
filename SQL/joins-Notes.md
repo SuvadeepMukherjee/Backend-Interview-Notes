@@ -150,11 +150,9 @@ The output will be the following
 | NULL     | Finance   |
 | NULL     | Admin     |
 
-------
+#### Q5:Consider the following tables:
 
-Consider the following tables:
-
-Employee Table:
+#### Employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -193,75 +191,7 @@ Projects Table
 | P2         | ETL Tool       | E1             |
 | P2         | ETL Tool       | M4             |
 
-#### Inner Join
-
-```sql
-SELECT
-  emp_name,
-  dept_name
-FROM
-  Employee
-  INNER JOIN Department ON Employee.dept_id = Department.dept_id
-```
-
-Employee: D1,D2,D10 , Department: D1,D2,D3,D4 Common: D1,D2
-
-The result will be the following
-
-| Name    | dept_name |
-| ------- | --------- |
-| Rahul   | IT        |
-| Manoj   | IT        |
-| James   | HR        |
-| Michael | HR        |
-
-#### Left Join
-
-```sql
-SELECT
-  e.emp_name,
-  d.dept_name
-from
-  employee e
-  LEFT JOIN department d ON e.dept_id = d.dept_Id
-
-
-```
-
-The output will be the following :
-
-| emp_name | dept_name |
-| -------- | --------- |
-| Rahul    | IT        |
-| Manoj    | IT        |
-| James    | HR        |
-| Michael  | HR        |
-| Ali      | NULL      |
-| Robin    | NULL      |
-
-#### Right Join :
-
-```sql
-SELECT
-  e.emp_name,
-  d.dept_name
-from
-  employee e
-  RIGHT JOIN department d ON e.dept_id = d.dept_Id
-```
-
-The output will be the following
-
-| emp_name | dept_name |
-| -------- | --------- |
-| Rahul    | IT        |
-| Manoj    | IT        |
-| James    | HR        |
-| Michael  | HR        |
-| NULL     | Finance   |
-| NULL     | Admin     |
-
-#### Q: Fetch details of all employee, their manager , their department and the projects they work on
+Write a sql query to  *fetch details of all employee, their manager , their department and the projects they work on*
 
 **Answer**: The sql query is shown in the follwing code snippet
 
