@@ -142,3 +142,22 @@
 | DELETE   | Removes specified rows from a table based on a condition. Data can be rolled back if needed. |
 | TRUNCATE | Removes all rows from a table quickly without logging individual row deletions. Cannot be rolled back. |
 | DROP     | Deletes an entire table, its structure, and all data. Cannot be rolled back and removes table definition. |
+
+#### Q22:What is a subquery? What are its various types? Give an example where you might use a subquery ?
+
+**Answer**: 
+
+| Term     | Definition                                                   |
+| -------- | ------------------------------------------------------------ |
+| Subquery | A query nested inside another query. It can be used in SELECT, INSERT, UPDATE, or DELETE statements or inside other subqueries. |
+| Types    | 1. **Single-row Subquery**: Returns one row. <br> 2. **Multiple-row Subquery**: Returns multiple rows. <br> 3. **Correlated Subquery**: Depends on the outer query. |
+
+### Example
+
+To find employees with salaries higher than the average salary:
+
+```sql
+SELECT employee_name
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+```
