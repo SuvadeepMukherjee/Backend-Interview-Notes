@@ -104,7 +104,51 @@ The output will be the following :
 | Ali      | NULL      |
 | Robin    | NULL      |
 
+#### Q4:Given the Employee and Department tables, write an SQL query to retrieve all department names along with their respective employee names, including departments that do not have any employees.
 
+Employee Table:
+
+| emp_id | emp_name | salary | dept_id | manager_id |
+| ------ | -------- | ------ | ------- | ---------- |
+| E1     | Rahul    | 15000  | D1      | M1         |
+| E2     | Manoj    | 15000  | D1      | M1         |
+| E3     | James    | 55000  | D2      | M2         |
+| E4     | Michael  | 25000  | D2      | M2         |
+| E5     | Ali      | 20000  | D10     | M3         |
+| E6     | Robin    | 35000  | D10     | M3         |
+
+Department Table:
+
+| dept_id | dept_name |
+| ------- | --------- |
+| D1      | IT        |
+| D2      | HR        |
+| D3      | Finance   |
+| D4      | Admin     |
+
+Write the SQL query below:
+
+**Answer**: The SQL Query is written below: 
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name
+from
+  employee e
+  RIGHT JOIN department d ON e.dept_id = d.dept_Id
+```
+
+The output will be the following
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| NULL     | Finance   |
+| NULL     | Admin     |
 
 ------
 
