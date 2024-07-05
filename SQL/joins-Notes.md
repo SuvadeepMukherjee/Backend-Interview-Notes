@@ -1,25 +1,20 @@
 ## Joins Notes :
 
-The following table gives a simple defination of Inner,left and Right Join
+#### Q1: In a tabular format write the defination of all the joins i.e INNER JOIN , LEFT JOIN , RIGHT JOIN , FULL OUTER JOIN ,CROSS JOIN , NATURAL JOIN , SELF JOIN
+
+**Answer**:The following table explains all the types of joins 
 
 | Join            | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
 | INNER JOIN      | *Fetches matching records only*                              |
-| LEFT JOIN       | *INNER JOIN  + additional records from left table*           |
-| RIGHT JOIN      | *INNER JOIN  + additional records from right table*          |
+| LEFT JOIN       | *INNER JOIN + additional records from left table*            |
+| RIGHT JOIN      | *INNER JOIN + additional records from right table*           |
 | FULL OUTER JOIN | *INNER JOIN + LEFT JOIN +RIGHT JOIN*                         |
-| CROSS JOIN      | *Cartesian Product of 2 Tables*                              |
-| NATURAL JOIN    | *Cross Join +Condition* <br/>*SQL Will decide the join condition based on common table names (INNER JOIN)* |
-| SELF JOIN       | *The Table Joins with itself can be INNER JOIN , LEFT JOIN, RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN or NATURAL JOIN * |
-|                 |                                                              |
+| CROSS JOIN      | *Cartesian Product of 2 Table*                               |
+| NATURAL JOIN    | *Cross Join + Condition*<br/>*SQL Will decide the join condition based on common table names (INNER JOIN)* |
+| SELF JOIN       | *The Table Joins with itself can be INNER JOIN , LEFT JOIN, RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN or NATURAL JOIN* |
 
 
-
-| Join       | Definition                                         |
-| ---------- | -------------------------------------------------- |
-| Inner Join | _Fectches matching records only_                   |
-| Left Join  | _Inner Join + additional records from left table_  |
-| Right Join | _Inner Join + additional records from right table_ |
 
 Consider the following tables:
 
