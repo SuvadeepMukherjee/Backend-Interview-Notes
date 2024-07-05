@@ -6,6 +6,12 @@
 
 ## Joins Notes :                                     
 
+| hello | ```sql console.log("hello World");<br />console.log("hi")``` |      |
+| ----- | ------------------------------------------------------------ | ---- |
+|       |                                                              |      |
+|       |                                                              |      |
+|       |                                                              |      |
+
 The following table gives a simple defination of Inner,left and Right Join 
 
 | Join       | Definition                                         |
