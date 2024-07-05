@@ -133,4 +133,12 @@
 2. **One To Many Relationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
 3. **Many to Many Relationship**  say between a books table and a authors table, a book can have multiple authors and an author can have multiple books
 
-### 
+#### Q21:What are DELETE , DROP And Truncate Keywords in SQL ? 
+
+**Answer**: The following table explains the difference between DELETE,DROP and TRUNCATE 		
+
+| Keyword  | Definition                                                   |
+| -------- | ------------------------------------------------------------ |
+| DELETE   | Removes specified rows from a table based on a condition. Data can be rolled back if needed. |
+| TRUNCATE | Removes all rows from a table quickly without logging individual row deletions. Cannot be rolled back. |
+| DROP     | Deletes an entire table, its structure, and all data. Cannot be rolled back and removes table definition. |
