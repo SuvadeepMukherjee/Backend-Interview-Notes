@@ -4,42 +4,7 @@
 
 
 
-## Joins Notes :
-
-```
-<table>
-<thead>
-  <tr>
-    <th>Status</th>
-    <th>Response</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>200</td>
-    <td>
-
-```json
-{
-  "id": 10,
-  "username": "marcoeidinger",
-  "created_at": "2021-02-097T20:45:26.433Z",
-  "updated_at": "2015-02-10T19:27:16.540Z"
-}
-bash
-Copy code
-</td>
-```
-
-<table>     <tr>         <th>Join Type</th>         <th>Description</th>         <th>Example Code</th>     </tr>     <tr>         <td>INNER JOIN</td>         <td>Returns records that have matching values in both tables.</td>         <td><pre><code>SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column;</code></pre></td>     </tr>     <tr>         <td>LEFT JOIN</td>         <td>Returns all records from the left table and the matched records from the right table.</td>         <td><pre><code>SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.common_column = table2.common_column;</code></pre></td>     </tr>     <tr>         <td>RIGHT JOIN</td>         <td>Returns all records from the right table and the matched records from the left table.</td>         <td><pre><code>SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.common_column = table2.common_column;</code></pre></td>     </tr>     <tr>         <td>FULL OUTER JOIN</td>         <td>Returns all records when there is a match in either left or right table.</td>         <td><pre><code>SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.common_column = table2.common_column;</code></pre></td>     </tr>     <tr>         <td>CROSS JOIN</td>         <td>Returns the Cartesian product of the two tables, i.e., all combinations of rows.</td>         <td><pre><code>SELECT column_name(s) FROM table1 CROSS JOIN table2;</code></pre></td>     </tr>     <tr>         <td>NATURAL JOIN</td>         <td>Joins two tables based on columns with the same name and datatype in both tables.</td>         <td><pre><code>SELECT column_name(s) FROM table1 NATURAL JOIN table2;</code></pre></td>     </tr> </table>
-
-|      | SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column; |      |      |
-| ---- | ------------------------------------------------------------ | ---- | ---- |
-|      | ```{ "id": 10,&#13; "username": "marcoeidinger",&#13; "created_at":&#13; "2021-02-097T20:45:26.433Z",&#13; "updated_at":"2015-02-10T19:27:16.540Z"}``` |      |      |
-|      |                                                              |      |      |
-|      |                                                              |      |      |
-
-​                                                   
+## Joins Notes :                                     
 
 The following table gives a simple defination of Inner,left and Right Join 
 
