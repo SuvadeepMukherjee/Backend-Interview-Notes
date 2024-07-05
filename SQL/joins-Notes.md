@@ -1,17 +1,4 @@
-```
-
-```
-
 ## Joins Notes :
-
-##
-
-<table>
-      <th>Lets See</th>
-      <tr>
-        ```sql console.log() console.log()```
-      </tr>
-    </table>
 
 The following table gives a simple defination of Inner,left and Right Join
 
