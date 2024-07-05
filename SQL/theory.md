@@ -133,3 +133,65 @@
 2. **One To Many Relationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
 3. **Many to Many Relationship**  say between a books table and a authors table, a book can have multiple authors and an author can have multiple books
 
+#### Q21:Create an Entity-Relationship diagram for a library database that tracks information about books and authors, including their relationships.
+
+**Book Table:**
+
+| BookID | Title                  | ISBN          | Genre     | Published Year |
+| ------ | ---------------------- | ------------- | --------- | -------------- |
+| 1      | To Kill a Mockingbird  | 9780061120084 | Fiction   | 1960           |
+| 2      | The Catcher in the Rye | 0316769487    | Fiction   | 1951           |
+| 3      | 1984                   | 9780451524935 | Dystopian | 1949           |
+
+**Author Table:**
+
+| AuthorID | Name          | Birthdate  | Nationality |
+| -------- | ------------- | ---------- | ----------- |
+| 1        | Harper Lee    | 1926-04-28 | American    |
+| 2        | J.D. Salinger | 1919-01-01 | American    |
+| 3        | George Orwell | 1903-06-25 | British     |
+
+
+
+**AuthoredBy Table:**
+
+| BookID | AuthorID |
+| ------ | -------- |
+| 1      | 1        |
+| 2      | 2        |
+| 3      | 3        |
+| 3      | 2        |
+
+**Answer**:Entities and Attributes:
+
+1. **Book**
+   - BookID (Primary Key)
+   - Title
+   - ISBN
+   - Genre
+   - Published Year
+2. **Author**
+   - AuthorID (Primary Key)
+   - Name
+   - Birthdate
+   - Nationality
+3. **AuthoredBy**
+   - BookID (Foreign Key, references Book)
+   - AuthorID (Foreign Key, references Author)
+
+### Relationships:
+
+- A **Book** can have one or more **Authors**.
+- An **Author** can write one or more **Books**.
+
+The relationship between **Book** and **Author** is many-to-many, which is represented by the **AuthoredBy** table.
+
+### ER Diagram:
+
+1. **Book** entity connected to **AuthoredBy** with a one-to-many relationship (One book can have many entries in AuthoredBy).
+2. **Author** entity connected to **AuthoredBy** with a one-to-many relationship (One author can have many entries in AuthoredBy).
+3. **AuthoredBy** entity that serves as a junction table between **Book** and **Author**.
+
+[Book] --< (1,∞) AuthoredBy (∞,1) >-- [Author]
+
+### 
