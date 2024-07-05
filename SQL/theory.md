@@ -130,6 +130,6 @@
 **Answer**: There are three Relationships
 
 1. **One to One Relationship**  say between a customers table (holding username and password) and the customers_details table(holding all the details of the customer )
-2. **One To Many Relkationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
+2. **One To Many Relationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
 3. **Many to Many Relationship**  say between a books table and a authors table, a book can have multiple authors and an author can have multiple books
 
