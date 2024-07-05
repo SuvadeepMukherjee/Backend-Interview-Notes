@@ -14,9 +14,9 @@
 | NATURAL JOIN    | *Cross Join + Condition*<br/>*SQL Will decide the join condition based on common table names (INNER JOIN)* |
 | SELF JOIN       | *The Table Joins with itself can be INNER JOIN , LEFT JOIN, RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN or NATURAL JOIN* |
 
-#### Q2: Consider the following tables:
+#### Q2: Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.
 
-**Employee Table:**
+Employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -27,7 +27,7 @@
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-**Department Table:**
+Department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -36,13 +36,28 @@
 | D3      | Finance   |
 | D4      | Admin     |
 
-Write the SQL query to retrieve the employee names along with their respective department names.
+Write the SQL query below:
 
-**Answer**:
+**Answer**: The SQL Query is written below 
+
+```sql
+SELECT
+  emp_name,
+  dept_name
+FROM
+  Employee
+  INNER JOIN Department ON Employee.dept_id = Department.dept_id
+```
 
 
 
 
+
+
+
+
+
+------
 
 Consider the following tables:
 
