@@ -2,27 +2,28 @@
 
 ```
 
+## Joins Notes :
 
+##
 
-## Joins Notes :                                     
+<table>
+      <th>Lets See</th>
+      <tr>
+        ```sql console.log() console.log()```
+      </tr>
+    </table>
 
-| hello | ```sql console.log("hello World");<br />console.log("hi")``` |      |
-| ----- | ------------------------------------------------------------ | ---- |
-|       |                                                              |      |
-|       |                                                              |      |
-|       |                                                              |      |
-
-The following table gives a simple defination of Inner,left and Right Join 
+The following table gives a simple defination of Inner,left and Right Join
 
 | Join       | Definition                                         |
 | ---------- | -------------------------------------------------- |
-| Inner Join | *Fectches matching records only*                   |
-| Left Join  | *Inner Join + additional records from left table*  |
-| Right Join | *Inner Join + additional records from right table* |
+| Inner Join | _Fectches matching records only_                   |
+| Left Join  | _Inner Join + additional records from left table_  |
+| Right Join | _Inner Join + additional records from right table_ |
 
-Consider the following tables: 
+Consider the following tables:
 
-Employee Table: 
+Employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -33,7 +34,7 @@ Employee Table:
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-Department Table: 
+Department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -42,7 +43,7 @@ Department Table:
 | D3      | Finance   |
 | D4      | Admin     |
 
-Manager Table: 
+Manager Table:
 
 | manager_id | manager_name | dept-id |
 | ---------- | ------------ | ------- |
@@ -51,7 +52,7 @@ Manager Table:
 | M3         | Nick         | D1      |
 | M4         | Cory         | D1      |
 
-Projects Table 
+Projects Table
 
 | project_id | project_name   | team_member_id |
 | ---------- | -------------- | -------------- |
@@ -61,7 +62,7 @@ Projects Table
 | P2         | ETL Tool       | E1             |
 | P2         | ETL Tool       | M4             |
 
-#### Inner Join 
+#### Inner Join
 
 ```sql
 SELECT
@@ -74,7 +75,7 @@ FROM
 
 Employee: D1,D2,D10 , Department: D1,D2,D3,D4 Common: D1,D2
 
-The result will be the following 
+The result will be the following
 
 | Name    | dept_name |
 | ------- | --------- |
@@ -96,7 +97,7 @@ from
 
 ```
 
-The output will be the following : 
+The output will be the following :
 
 | emp_name | dept_name |
 | -------- | --------- |
@@ -107,7 +108,7 @@ The output will be the following :
 | Ali      | NULL      |
 | Robin    | NULL      |
 
-#### Right Join : 
+#### Right Join :
 
 ```sql
 SELECT
@@ -118,7 +119,7 @@ from
   RIGHT JOIN department d ON e.dept_id = d.dept_Id
 ```
 
-The output will be the following 
+The output will be the following
 
 | emp_name | dept_name |
 | -------- | --------- |
@@ -129,9 +130,9 @@ The output will be the following
 | NULL     | Finance   |
 | NULL     | Admin     |
 
-#### Q: Fetch details of all employee, their manager , their department and the projects they work on 
+#### Q: Fetch details of all employee, their manager , their department and the projects they work on
 
-**Answer**: The sql query is shown in the follwing code snippet 
+**Answer**: The sql query is shown in the follwing code snippet
 
 ```sql
 SELECT
@@ -143,10 +144,10 @@ FROM
   employee e
   LEFT JOIN department d ON e.dept_id = d.dept_id
   INNER JOIN manager m ON m.manager_id = e.manager_id
-  LEFT JOIN projects P ON p.team_member_id = e.emp_id; 
+  LEFT JOIN projects P ON p.team_member_id = e.emp_id;
 ```
 
-The output will be the follwing : 
+The output will be the follwing :
 
 | emp_name | dept_name | manager_name | project_name   |
 | -------- | --------- | ------------ | -------------- |
@@ -158,11 +159,11 @@ The output will be the follwing :
 | Ali      | NULL      | Nick         | NULL           |
 | Robin    | NULL      | Nick         | NULL           |
 
- Joins Notes Part 2: 
+Joins Notes Part 2:
 
-Consider the following tables: 
+Consider the following tables:
 
-Employee Table: 
+Employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -173,7 +174,7 @@ Employee Table:
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-Department Table: 
+Department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -182,17 +183,17 @@ Department Table:
 | D3      | Finance   |
 | D4      | Admin     |
 
-Company table: 
+Company table:
 
 | Company_id | company_name      | Location     |
 | ---------- | ----------------- | ------------ |
 | C001       | techTFQ Solutions | Kuala lumpur |
 
-#### Full Outer Join 
+#### Full Outer Join
 
-Full Outer Join = Inner Join + Left Join + Right Join 
+Full Outer Join = Inner Join + Left Join + Right Join
 
-Example query : 
+Example query :
 
 ```sql
 SELECT
@@ -203,7 +204,7 @@ FROM
   FULL OUTER JOIN department d ON d.dept_id = e.dept_id;
 ```
 
-The output will be the follwing: 
+The output will be the follwing:
 
 | emp_name | dept_name |
 | -------- | --------- |
@@ -216,13 +217,13 @@ The output will be the follwing:
 | NULL     | Finance   |
 | NULL     | Admin     |
 
-#### Cross Join : 
+#### Cross Join :
 
 **Defination**: A **Cross Join** in SQL is a type of join that returns the Cartesian product of two tables. This means it combines each row from the first table with every row from the second table, resulting in a result set that contains all possible combinations of rows from both tables. Cross joins do not require any condition to join the tables.
 
-##### Q: Write a query to fetch the Employee table and their corresponding department name .Also make sure to display the company name and the company location corresponding to each employee 
+##### Q: Write a query to fetch the Employee table and their corresponding department name .Also make sure to display the company name and the company location corresponding to each employee
 
-**Answer**: We write the follwing query 
+**Answer**: We write the follwing query
 
 ```sql
 SELECT
@@ -236,7 +237,7 @@ FROM
   CROSS JOIN company c;
 ```
 
-The output will be the following : 
+The output will be the following :
 
 | emp_name | dept_name | comapny_name      | Location     |
 | -------- | --------- | ----------------- | ------------ |
@@ -245,19 +246,19 @@ The output will be the following :
 | James    | HR        | techTFQ Solutions | kuala lampur |
 | Michael  | HR        | techTFQ Solutions | kuala lampur |
 
-#### Natural join 
+#### Natural join
 
 Natural Join = Cross join + condition(inner join )
 
-Sql will decide on the join condition based on common table names 
+Sql will decide on the join condition based on common table names
 
 ```sql
-SELECT e.emp_name,d.dept_name 
-FROM employee e 
+SELECT e.emp_name,d.dept_name
+FROM employee e
 NATURAL JOIN department d ;
 ```
 
-In the above sql query the join condition will be dept_id 
+In the above sql query the join condition will be dept_id
 
 | emp_name | dept_name |
 | -------- | --------- |
@@ -268,24 +269,24 @@ In the above sql query the join condition will be dept_id
 
 #### Self Join
 
-In self join we join a table with itself , we can do inner join .left join ,right join ,full outer join , cross join or natural join 
+In self join we join a table with itself , we can do inner join .left join ,right join ,full outer join , cross join or natural join
 
-Consider the following *Family* table : 
+Consider the following _Family_ table :
 
-| member_id | name    | age  | parent_id |
-| --------- | ------- | ---- | --------- |
-| F1        | David   | 4    | F5        |
-| F2        | Carol   | 10   | F5        |
-| F3        | Michael | 12   | F5        |
-| F4        | Johnson | 36   |           |
-| F5        | Morgan  | 40   | F6        |
-| F6        | Stewart | 70   |           |
-| F7        | Rohan   | 6    | F4        |
-| F8        | Asha    | 8    | F4        |
+| member_id | name    | age | parent_id |
+| --------- | ------- | --- | --------- |
+| F1        | David   | 4   | F5        |
+| F2        | Carol   | 10  | F5        |
+| F3        | Michael | 12  | F5        |
+| F4        | Johnson | 36  |           |
+| F5        | Morgan  | 40  | F6        |
+| F6        | Stewart | 70  |           |
+| F7        | Rohan   | 6   | F4        |
+| F8        | Asha    | 8   | F4        |
 
-##### Q: Write a query to fetch the child name and their age corresponding to their parent name ? 
+##### Q: Write a query to fetch the child name and their age corresponding to their parent name ?
 
-**Answer**:The query is shown in the following table 
+**Answer**:The query is shown in the following table
 
 ```sql
 SELECT
@@ -298,7 +299,7 @@ FROM
   join family as parent on child.parent_id = parent.member_id;
 ```
 
-The output would be the follwing 
+The output would be the follwing
 
 | child_name | child_age | parent_name | parent_age |
 | ---------- | --------- | ----------- | ---------- |
@@ -308,4 +309,3 @@ The output would be the follwing
 | Morgan     | 40        | Stewart     | 70         |
 | Rohan      | 6         | Johnson     | 36         |
 | Asha       | 8         | Johnson     | 36         |
-
