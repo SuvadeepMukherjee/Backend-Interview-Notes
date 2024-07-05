@@ -1,10 +1,16 @@
 
 
-## Joins Notes Part 1: 
+## Joins Notes :
+
+|      | SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column; |      |      |
+| ---- | ------------------------------------------------------------ | ---- | ---- |
+|      |                                                              |      |      |
+|      |                                                              |      |      |
+|      |                                                              |      |      |
+
+\# SQL Joins Examples | Join Type      | Description                                                                                          | Example Code                                                                                                                                  | |----------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | INNER JOIN     | Returns records that have matching values in both tables.                                            | ```sql<br>SELECT column_name(s)<br>FROM table1<br>INNER JOIN table2<br>ON table1.common_column = table2.common_column;```                     | | LEFT JOIN      | Returns all records from the left table and the matched records from the right table.                | ```sql<br>SELECT column_name(s)<br>FROM table1<br>LEFT JOIN table2<br>ON table1.common_column = table2.common_column;```                      | | RIGHT JOIN     | Returns all records from the right table and the matched records from the left table.                | ```sql<br>SELECT column_name(s)<br>FROM table1<br>RIGHT JOIN table2<br>ON table1.common_column = table2.common_column;```                     | | FULL OUTER JOIN| Returns all records when there is a match in either left or right table.                             | ```sql<br>SELECT column_name(s)<br>FROM table1<br>FULL OUTER JOIN table2<br>ON table1.common_column = table2.common_column;```                | | CROSS JOIN     | Returns the Cartesian product of the two tables, i.e., all combinations of rows.                     | ```sql<br>SELECT column_name(s)<br>FROM table1<br>CROSS JOIN table2;```                                                                      | | NATURAL JOIN   | Joins two tables based on columns with the same name and datatype in both tables.                    | ```sql<br>SELECT column_name(s)<br>FROM table1<br>NATURAL JOIN table2;```                                                                    |
 
 The following table gives a simple defination of Inner,left and Right Join 
-
-
 
 | Join       | Definition                                         |
 | ---------- | -------------------------------------------------- |
