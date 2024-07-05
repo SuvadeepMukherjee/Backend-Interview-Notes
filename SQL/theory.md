@@ -194,4 +194,100 @@ The relationship between **Book** and **Author** is many-to-many, which is repre
 
 [Book] --< (1,∞) AuthoredBy (∞,1) >-- [Author]
 
-### 
+#### Q22:Create an Entity-Relationship Diagram for a User Management Database
+
+#### User Table:
+
+| id   | name       | email            | password  | isPremiumUser | totalExpenses |
+| ---- | ---------- | ---------------- | --------- | ------------- | ------------- |
+| 1    | John Doe   | john@example.com | password1 | true          | 1000          |
+| 2    | Jane Smith | jane@example.com | password2 | false         | 500           |
+| 3    | Bob Brown  | bob@example.com  | password3 | true          | 1500          |
+
+#### Expense Table:
+
+| id   | date       | category  | description      | amount | userId |
+| ---- | ---------- | --------- | ---------------- | ------ | ------ |
+| 1    | 2024-01-01 | Food      | Lunch            | 20     | 1      |
+| 2    | 2024-01-02 | Transport | Bus fare         | 2      | 2      |
+| 3    | 2024-01-03 | Food      | Dinner           | 30     | 1      |
+| 4    | 2024-01-04 | Utilities | Electricity bill | 50     | 3      |
+
+#### Order Table:
+
+| id   | paymentid | orderid | status  | userId |
+| ---- | --------- | ------- | ------- | ------ |
+| 1    | pay123    | ord001  | Paid    | 1      |
+| 2    | pay124    | ord002  | Pending | 2      |
+| 3    | pay125    | ord003  | Paid    | 3      |
+
+#### ResetPassword Table:
+
+| id       | isActive | userId |
+| -------- | -------- | ------ |
+| reset001 | true     | 1      |
+| reset002 | false    | 2      |
+| reset003 | true     | 3      |
+
+#### Downloads Table:
+
+| id   | downloadUrl               | userId |
+| ---- | ------------------------- | ------ |
+| 1    | https://example.com/file1 | 1      |
+| 2    | https://example.com/file2 | 2      |
+| 3    | https://example.com/file3 | 3      |
+
+**Answer**: Entities and Attributes:
+
+1. **User**
+   - id (Primary Key)
+   - name
+   - email
+   - password
+   - isPremiumUser
+   - totalExpenses
+2. **Expense**
+   - id (Primary Key)
+   - date
+   - category
+   - description
+   - amount
+   - userId (Foreign Key, references User)
+3. **Order**
+   - id (Primary Key)
+   - paymentid
+   - orderid
+   - status
+   - userId (Foreign Key, references User)
+4. **ResetPassword**
+   - id (Primary Key)
+   - isActive
+   - userId (Foreign Key, references User)
+5. **Downloads**
+   - id (Primary Key)
+   - downloadUrl
+   - userId (Foreign Key, references User)
+
+### Relationships:
+
+- A **User** can have many **Expenses**.
+- An **Expense** belongs to one **User**.
+- A **User** can have many **Orders**.
+- An **Order** belongs to one **User**.
+- A **User** can have many **ResetPassword** entries.
+- A **ResetPassword** entry belongs to one **User**.
+- A **User** can have many **Downloads**.
+- A **Download** belongs to one **User**.
+
+### ER Diagram:
+
+1. **User** entity connected to **Expense**, **Order**, **ResetPassword**, and **Downloads** with one-to-many relationships.
+
+```
+plaintext
+Copy code
+[User] --< (1,∞) [Expense]
+[User] --< (1,∞) [Order]
+[User] --< (1,∞) [ResetPassword]
+[User] --< (1,∞) [Downloads]
+```
