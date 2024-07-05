@@ -1,3 +1,0 @@
-## Joins Questions
-
-We are 
