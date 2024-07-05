@@ -2,6 +2,19 @@
 
 The following table gives a simple defination of Inner,left and Right Join
 
+| Join            | Definition                                                   |
+| --------------- | ------------------------------------------------------------ |
+| INNER JOIN      | *Fetches matching records only*                              |
+| LEFT JOIN       | *INNER JOIN  + additional records from left table*           |
+| RIGHT JOIN      | *INNER JOIN  + additional records from right table*          |
+| FULL OUTER JOIN | *INNER JOIN + LEFT JOIN +RIGHT JOIN*                         |
+| CROSS JOIN      | *Cartesian Product of 2 Tables*                              |
+| NATURAL JOIN    | *Cross Join +Condition* <br/>*SQL Will decide the join condition based on common table names (INNER JOIN)* |
+| SELF JOIN       | *The Table Joins with itself can be INNER JOIN , LEFT JOIN, RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN or NATURAL JOIN * |
+|                 |                                                              |
+
+
+
 | Join       | Definition                                         |
 | ---------- | -------------------------------------------------- |
 | Inner Join | _Fectches matching records only_                   |
