@@ -237,57 +237,15 @@ The relationship between **Book** and **Author** is many-to-many, which is repre
 | 2    | https://example.com/file2 | 2      |
 | 3    | https://example.com/file3 | 3      |
 
-**Answer**: Entities and Attributes:
+**Answer**:  ER Diagram:
 
-1. **User**
-   - id (Primary Key)
-   - name
-   - email
-   - password
-   - isPremiumUser
-   - totalExpenses
-2. **Expense**
-   - id (Primary Key)
-   - date
-   - category
-   - description
-   - amount
-   - userId (Foreign Key, references User)
-3. **Order**
-   - id (Primary Key)
-   - paymentid
-   - orderid
-   - status
-   - userId (Foreign Key, references User)
-4. **ResetPassword**
-   - id (Primary Key)
-   - isActive
-   - userId (Foreign Key, references User)
-5. **Downloads**
-   - id (Primary Key)
-   - downloadUrl
-   - userId (Foreign Key, references User)
-
-### Relationships:
-
-- A **User** can have many **Expenses**.
-- An **Expense** belongs to one **User**.
-- A **User** can have many **Orders**.
-- An **Order** belongs to one **User**.
-- A **User** can have many **ResetPassword** entries.
-- A **ResetPassword** entry belongs to one **User**.
-- A **User** can have many **Downloads**.
-- A **Download** belongs to one **User**.
-
-### ER Diagram:
-
-1. **User** entity connected to **Expense**, **Order**, **ResetPassword**, and **Downloads** with one-to-many relationships.
+- **User** entity connected to **Expense**, **Order**, **ResetPassword**, and **Downloads** with one-to-many relationships.
 
 ```
-plaintext
-Copy code
 [User] --< (1,∞) [Expense]
 [User] --< (1,∞) [Order]
 [User] --< (1,∞) [ResetPassword]
 [User] --< (1,∞) [Downloads]
 ```
+
+![ER-diagram-Expense-Tracker](../assets/ER-diagram-Expense-Tracker.png)
