@@ -106,3 +106,26 @@
 #### Q18:Explain the `COALESCE()` function in sql ?
 
 **Answer**: The `COALESCE()` function in SQL is used to return the first non-NULL value in a list of expressions
+
+#### Q19:What are Entities and Relationships ?
+
+**Answer**: 
+
+**Entities**:
+
+- An entity represents a *distinct object* 
+-  entities are typically represented as *tables* where each row corresponds to a single instance of that entity, and each column represents an attribute or property of that entity.
+
+**Relationships**:
+
+- Relationships define *how entities are related to each other within the database*.
+
+- There are three main types of relationships:
+
+  - **One-to-One**
+  - **One-to-Many (or Many-to-One)**
+  - **Many-to-Many**: 
+
+- Relationships are typically established using keys (primary and foreign keys):
+
+  
