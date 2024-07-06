@@ -268,6 +268,14 @@ The output will be the follwing:
 | NULL     | Finance   |
 | NULL     | Admin     |
 
+|      |      | ![execution](../assets/execution.png) |
+| ---- | ---- | ------------------------------------- |
+|      |      |                                       |
+|      |      |                                       |
+|      |      |                                       |
+
+
+
 #### Q7:
 
 
