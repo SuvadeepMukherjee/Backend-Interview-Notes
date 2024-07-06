@@ -104,9 +104,9 @@ The output will be the following :
 | Ali      | NULL      |
 | Robin    | NULL      |
 
-#### Q4:Given the Employee and Department tables, write an SQL query to retrieve all department names along with their respective employee names, including departments that do not have any employees.
+#### Q4:Given the employee and department tables, write a sql query to retrieve all department names along with their respective employee names, including departments that do not have any employees.
 
-Employee Table:
+employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -117,7 +117,7 @@ Employee Table:
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-Department Table:
+department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -128,15 +128,15 @@ Department Table:
 
 Write the SQL query below:
 
-**Answer**: The SQL Query is written below: 
+**Answer**: The sql Query is written below: 
 
 ```sql
-SELECT
+select
   e.emp_name,
   d.dept_name
 from
   employee e
-  RIGHT JOIN department d ON e.dept_id = d.dept_Id
+  right join department d on e.dept_id = d.dept_Id
 ```
 
 The output will be the following
