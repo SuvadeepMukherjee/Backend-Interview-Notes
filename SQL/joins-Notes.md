@@ -4,28 +4,16 @@
 
 **Answer**:The following table explains all the types of joins and their corresponding syntax
 
-| Join            | Defination                      | Syntax                                                       |
-| --------------- | ------------------------------- | ------------------------------------------------------------ |
-| INNER JOIN      | *Fetches matching records only* | SELECT **Column_name**(s)<br/>FROM  table1<br/>    INNER JOIN table2<br/>        ON table1.column_name = table2.column_name; |
-| LEFT JOIN       |                                 |                                                              |
-| RIGHT JOIN      |                                 |                                                              |
-| FULL OUTER JOIN |                                 |                                                              |
-| CROSS JOIN      |                                 |                                                              |
-| NATURAL JOIN    |                                 |                                                              |
-| SELF JOIN       |                                 |                                                              |
-|                 |                                 |                                                              |
-
-
-
-| Join            | Definition                                                   |
-| --------------- | ------------------------------------------------------------ |
-| INNER JOIN      | *Fetches matching records only*                              |
-| LEFT JOIN       | *INNER JOIN + additional records from left table*            |
-| RIGHT JOIN      | *INNER JOIN + additional records from right table*           |
-| FULL OUTER JOIN | *INNER JOIN + LEFT JOIN +RIGHT JOIN*                         |
-| CROSS JOIN      | *Cartesian Product of 2 Table*                               |
-| NATURAL JOIN    | *Cross Join + Condition*<br/>*SQL Will decide the join condition based on common table names (INNER JOIN)* |
-| SELF JOIN       | *The Table Joins with itself can be INNER JOIN , LEFT JOIN, RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN or NATURAL JOIN* |
+| Join            | Defination                                                   | Syntax                                                       |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| INNER JOIN      | *Fetches matching records only*                              | SELECT **Column_name**(s)<br/>FROM  table1<br/>    INNER JOIN table2<br/>        ON table1.column_name = table2.column_name; |
+| LEFT JOIN       | INNER JOIN + additional records from LEFT table              | SELECT **Column_name**(s)<br/>FROM  table1<br/>    LEFT JOIN table2<br/>       ON table1.column_name = table2.column_name; |
+| RIGHT JOIN      | INNER JOIN + additional records from RIGHT table             | SELECT **Column_name**(s)<br/>FROM  table1<br/>    RIGHT JOIN table2<br/>        ON table1.column_name = table2.column_name; |
+| FULL OUTER JOIN | INNER JOIN + LEFT JOIN + RIGHT JOIN                          | SELECT **Column_name**(s)<br/>FROM  table1<br/>    full OUTER JOIN table2<br/>          ON table1.column_name = table2.column_name<br/>WHERE CONDITION; |
+| CROSS JOIN      | Cartesian Product of 2 tables                                | SELECT **Column_name**(s)<br/>FROM  table1<br/>    CROSS JOIN table2; |
+| NATURAL JOIN    | Cross Join + Condition <br/>sql  will decide the join condition based on  common table name(INNER JOIN) | SELECT **Column_name**(s)<br/>FROM  table1<br/>    natural JOIN table2; |
+| SELF JOIN       | The table joins itself (Can be INNER JOIN,LEFT JOIN,RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN ,NATURAL JOIN) |                                                              |
+|                 |                                                              |                                                              |
 
 #### Q2: Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.
 
