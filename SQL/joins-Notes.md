@@ -1,8 +1,21 @@
 ## Joins Notes :
 
-#### Q1: In a tabular format write the defination of all the joins i.e INNER JOIN , LEFT JOIN , RIGHT JOIN , FULL OUTER JOIN ,CROSS JOIN , NATURAL JOIN , SELF JOIN
+#### Q1: In a tabular format write the defination of all the joins i.e INNER JOIN , LEFT JOIN , RIGHT JOIN , FULL OUTER JOIN ,CROSS JOIN , NATURAL JOIN , SELF JOIN and their syntax
 
-**Answer**:The following table explains all the types of joins 
+**Answer**:The following table explains all the types of joins and their corresponding syntax
+
+| Join            | Defination                      | Syntax                                                       |
+| --------------- | ------------------------------- | ------------------------------------------------------------ |
+| INNER JOIN      | *Fetches matching records only* | SELECT **Column_name**(s)<br/>FROM  table1<br/>    INNER JOIN table2<br/>        ON table1.column_name = table2.column_name; |
+| LEFT JOIN       |                                 |                                                              |
+| RIGHT JOIN      |                                 |                                                              |
+| FULL OUTER JOIN |                                 |                                                              |
+| CROSS JOIN      |                                 |                                                              |
+| NATURAL JOIN    |                                 |                                                              |
+| SELF JOIN       |                                 |                                                              |
+|                 |                                 |                                                              |
+
+
 
 | Join            | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
@@ -267,12 +280,6 @@ The output will be the follwing:
 | Robin    | NULL      |
 | NULL     | Finance   |
 | NULL     | Admin     |
-
-|      |      | ![execution](../assets/execution.png) |
-| ---- | ---- | ------------------------------------- |
-|      |      |                                       |
-|      |      |                                       |
-|      |      |                                       |
 
 
 
