@@ -16,7 +16,7 @@
 
 #### Q2: Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.
 
-Employee Table:
+employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -27,7 +27,7 @@ Employee Table:
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-Department Table:
+department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -41,12 +41,12 @@ Write the SQL query below:
 **Answer**: The SQL Query is written below 
 
 ```sql
-SELECT
+select
   emp_name,
   dept_name
-FROM
-  Employee
-  INNER JOIN Department ON Employee.dept_id = Department.dept_id
+from
+  employee
+  inner join department on employee.dept_id = department.dept_id
 ```
 
 The result will be the following
