@@ -152,7 +152,7 @@ The output will be the following
 
 #### Q5:Consider the following tables:
 
-#### Employee Table:
+#### employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
@@ -163,7 +163,7 @@ The output will be the following
 | E5     | Ali      | 20000  | D10     | M3         |
 | E6     | Robin    | 35000  | D10     | M3         |
 
-Department Table:
+department Table:
 
 | dept_id | dept_name |
 | ------- | --------- |
@@ -172,7 +172,7 @@ Department Table:
 | D3      | Finance   |
 | D4      | Admin     |
 
-Manager Table:
+manager Table:
 
 | manager_id | manager_name | dept-id |
 | ---------- | ------------ | ------- |
@@ -181,7 +181,7 @@ Manager Table:
 | M3         | Nick         | D1      |
 | M4         | Cory         | D1      |
 
-Projects Table
+projects Table
 
 | project_id | project_name   | team_member_id |
 | ---------- | -------------- | -------------- |
