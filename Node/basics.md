@@ -36,7 +36,7 @@ console.log("Server is running on port 3000");
 
 ### Q3: What do you mean by Node.js Event driven architecture ? 
 
-**Answer** ; event emitters emit events , These events are picked by event listeners which fires off callback functions attached to each event listen 
+**Answer** ; event emitters emit events , These events are picked by event listeners which fires off callback functions attached to each event listener
 
 ### Q4: What is the observer pattern in Javascript programming ?
 
