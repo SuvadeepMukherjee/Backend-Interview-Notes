@@ -14,7 +14,7 @@
 - **C++ features** that provide for functionality such as file system access and networking
 - A **JavaScript library** that provides functions and utilities to tap into the C++ features from your JavaScript code
 
-### Q3: What is the role of libel in Node.js runtime ?
+### Q3: What is the role of libuv in Node.js runtime ?
 
 **Answer**: libuv helps handle asynchronous operations in Node.js. For async operations like handling a network request, libuv relies on the operating system primitives. For async operations like reading a file that has no native OS support, libuv relies on its thread pool to ensure that the main thread is not blocked.
 
