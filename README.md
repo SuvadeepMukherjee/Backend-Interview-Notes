@@ -34,6 +34,7 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [Authentication-Authorization](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/authentication-authorization.md)
 - [ORM-ODM](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/ORM-ODM/questions.md)
 - [MongoDB](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/MongoDB/Questions.md)
+- [Database Engineering](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Database-Engineering/questions.md)
 
 
 ## Resources: 
