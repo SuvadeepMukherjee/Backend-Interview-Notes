@@ -2,7 +2,7 @@
 
 
 
-### Q1: What is the difference between realtive path and absolute path ? 
+### Q1: What is the difference between relative path and absolute path ? 
 
 **Answer**: Following are the differences between relative path and ansolute path 
 
@@ -75,9 +75,9 @@ console.log("Server is running on port 3000");
 | PUT          | replaces all current representations of the target resource with the uploaded content |
 | DELETE       | deletes the specified resource                               |
 
-### Q8: Which module is used to read and write operations ?
+### Q8: Which module is used for read and write operations ?
 
-**Answer**: fIlesystem module(fs)
+**Answer**: fIleSystem module(fs)
 
 ### Q9: How many types of API functions are there in Node ? 
 
