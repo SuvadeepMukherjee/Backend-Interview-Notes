@@ -8,7 +8,7 @@
 
 **Answer**: 
 
-![node-runtime](../assets/node-runtime.png)
+![node-runtime](../../assets/node-runtime.png)
 
 - **External dependencies** — such as V8, libuv, crypto — required by Node.js for its functioning
 - **C++ features** that provide for functionality such as file system access and networking
