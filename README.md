@@ -29,10 +29,10 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [Routing](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/routing.md)
 - Rest
 
-  - [Basics]()
-  - [Cors]()
-  - [HTTP Methods]()
-  - [Authentication-Authorization]()
+  - [Basics](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/basics.md)
+  - [Cors](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/cors-serialization-deserialization.md)
+  - [HTTP Methods](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/http-methods-and-status-codes.md)
+  - [Authentication-Authorization](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/authentication-authorization.md)
 
 
 ## Resources: 
