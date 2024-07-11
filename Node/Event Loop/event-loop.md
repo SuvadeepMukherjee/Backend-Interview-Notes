@@ -20,7 +20,7 @@
 
 ### Q4: How code is executed in the Node.js runtime ? 
 
-![execution](../assets/execution.png)
+![execution](../../assets/execution.png)
 
 The V8 Engine handles the execution of javascript code.The engine comprises a memory heap and a call stack . Whenever we declare variables or functions , memory is allocated on the heap and whenver we execute code , they are pushed into the call stack .When they are done executing it is popped off the call stack
 
