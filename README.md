@@ -27,6 +27,13 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [Basics](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/basics.md)
   - [Middleware](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/middleware.md)
   - [Routing](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/routing.md)
+- Rest
+
+  - [Basics]()
+  - [Cors]()
+  - [HTTP Methods]()
+  - [Authentication-Authorization]()
+
 
 ## Resources: 
 
