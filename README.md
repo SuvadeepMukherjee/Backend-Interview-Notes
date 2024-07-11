@@ -37,9 +37,23 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [Cors](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/cors-serialization-deserialization.md)
   - [HTTP Methods](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/http-methods-and-status-codes.md)
   - [Authentication-Authorization](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/REST/authentication-authorization.md)
-- [ORM-ODM](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/ORM-ODM/questions.md)
-- [MongoDB](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/MongoDB/Questions.md)
-- [Database Engineering](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Database-Engineering/questions.md)
+- ORM-ODM
+
+  - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/ORM-ODM/questions.md)
+
+- MongoDB
+
+  - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/MongoDB/Questions.md)
+
+- Database Engineering
+
+  - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Database-Engineering/questions.md)
+
+- Miscellaneous Questions
+
+  - [Error Handling and Debugging](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/Error-handling-and-debugging.md)
+  - [Security,performance and Deployment](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/security-performance-and-deployment.md)
+
 
 
 ## Resources: 
