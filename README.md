@@ -69,3 +69,4 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
 - [Codeevolution Node.js Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
 - [Node.js - Top 100 Interview Questions and Answers ](https://www.youtube.com/watch?v=Nz-nPR5YJbw&t=1302s)
+- [A Complete Visual Guide to Understanding the Node.js Event Loop](https://www.builder.io/blog/visual-guide-to-nodejs-event-loop)
