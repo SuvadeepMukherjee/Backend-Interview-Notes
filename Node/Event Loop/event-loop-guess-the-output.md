@@ -16,7 +16,7 @@
 
 If there are more callbacks to be processed at this point, the loop is kept alive for one more run, and the same steps are repeated. On the other hand, if all callbacks are executed and there is no more code to process, the event loop exits.
 
-![event-loop](../assets/event-loop.webp)
+![event-loop](../../assets/event-loop.webp)
 
 ### Q2:Explain the Asynchronous Code Execution of the below code snippet ? 
 
