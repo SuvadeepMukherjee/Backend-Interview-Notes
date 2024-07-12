@@ -89,7 +89,7 @@ app.get("/users/:userId", (req, res, next) => {
 
   const userId = req.params.usersId;
 
-  res.send("User id : ${userId}")
+  res.send(`User id : ${userId}`)
 
 });
 
