@@ -23,7 +23,7 @@
 - Each loaded module in Node is wrapped with an IIFE that provides private scoping of code .
 - IIFE helps top-level variables scoped to the module rather than the global object
 
-### Q6: The iife that wraps every module contains 5 properties , What are those 5 properties ? 
+### Q5: The iife that wraps every module contains 5 properties , What are those 5 properties ? 
 
 **Answer**: The 5 properties are as following :
 
@@ -33,7 +33,7 @@
 4. exports
 5. module
 
-### Q7: What are the 6 patterns of import-export patterns in Common JS ? 
+### Q6: What are the 6 patterns of import-export patterns in Common JS ? 
 
 **Answer**: The following code snippet highlights the 5 patterns of import-export patterns in CommonJS
 
@@ -111,11 +111,11 @@ return a - b;
 
 ```
 
-### Q8: module.exports vs exports 
+### Q7: module.exports vs exports 
 
 **Answer**: From a module node only returns module.exports and not the exports object , exports is just a reference to module.exports , If we directly assign a value or function like exports={} its linkage with module.exports is broken  and exports wont correspond to the module.exports  
 
-### Q9: What are ESModules ? 
+### Q8: What are ESModules ? 
 
 **Answer**: Following are the important points about ESModules 
 
