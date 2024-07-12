@@ -50,10 +50,9 @@ app.listen(3000, () => {
 
 ### Q4: What are route handlers ? 
 
-**Answer**:The following are the salient points about route handlers
+**Answer**:
 
-1. *second argument passed* to app.get() or app.post() 
-2.  route handler function is used to *process the request and generate a response* 
+functions that are responsible for handling requests to specific endpoints (routes) in an application ,in the below code snippet route handler is the *second argument passed* to app.get() or app.post() 
 
 ```javascript
 //define a route for handling get requests
