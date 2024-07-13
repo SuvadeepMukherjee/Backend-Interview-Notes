@@ -53,7 +53,7 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Project%20Based%20Questions/Questions.md)
 - SQL
 
-  - [SQL Queries](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/SQL/queries.md)
+  - [SQL Queries](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/SQL/queries-questions.md)
   - [SQL Theoretical Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/SQL/theory.md)
 
 
