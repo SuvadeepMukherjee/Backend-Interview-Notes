@@ -96,4 +96,13 @@ LIMIT 10 offset 5;
 | 4    | John   | 21   |
 | 5    | Andrew | 23   |
 
-**Answer**:
+**Answer**:The Query is provided below
+
+```sql
+SELECT
+  name
+FROM
+  students
+WHERE
+  name LIKE 'A%';
+```
