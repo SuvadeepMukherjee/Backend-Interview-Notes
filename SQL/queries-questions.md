@@ -594,9 +594,7 @@ The output will be the following :
 | Ali      | NULL      |
 | Robin    | NULL      |
 
-#### Q28(Q4):Given the employee and department tables, write a sql query to retrieve all department names along with their respective employee names, including departments that do not have any employees.
-
-
+#### Q28:Given the employee and department tables, write a sql query to retrieve all department names along with their respective employee names, including departments that do not have any employees.
 
 employee Table:
 
