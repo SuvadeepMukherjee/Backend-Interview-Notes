@@ -86,8 +86,6 @@ LIMIT 10 offset 5;
 
 #### Q9: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below
 
-
-
 | id   | name   | age  |
 | ---- | ------ | ---- |
 | 1    | Alice  | 20   |
@@ -108,8 +106,6 @@ WHERE
 ```
 
 #### Q10:Write a SQL query to get the third maximum salary using `OFFSET`.The *Employees* table is given below
-
-
 
 | id   | name   | salary |
 | ---- | ------ | ------ |
@@ -136,8 +132,6 @@ OFFSET
 
 #### Q11(Q3)Write the SQL Query that display the region and the number of employees working in each region
 
-
-
 Table name: `employees`
 
 | id   | name   | salary | region |
@@ -160,8 +154,6 @@ GROUP BY
 ```
 
 #### Q12(Q4): Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
-
-
 
 Table name: `employees`
 
@@ -202,8 +194,6 @@ ORDER BY
 
 #### Q17(Q6): Write an SQL query to delete the column `region` from the `employees` table.
 
-
-
 **Example Scenario:**
 
 You have a table named `employees` with the following structure:
@@ -225,8 +215,6 @@ DROP COLUMN region;
 ```
 
 #### Q18(Q7): Based on the employees table write a sql query to find the 7th highest salary
-
-
 
 **Table: employees**
 
@@ -257,9 +245,7 @@ OFFSET
 
 #### Q19(Q8): Given the `employees` table, write a SQL query to add a new column named `department` to the table.
 
-
-
-**Table: employees**
+#### **Table: employees**
 
 | id   | name    | salary |
 | ---- | ------- | ------ |
@@ -280,8 +266,6 @@ ADD COLUMN department VARCHAR(50);
 
 #### Q20(Q9):Given the `students` table, write a SQL query to display the records with odd `id` values.
 
-
-
 **Table: students**
 
 | id   | name    | age  |
@@ -295,3 +279,12 @@ ADD COLUMN department VARCHAR(50);
 | 7    | Grace   | 26   |
 
 **Answer**: The SQL Query is written below :
+
+```sql
+SELECT
+  *
+FROM
+  students
+WHERE
+  MOD(id, 2) = 1;
+```
