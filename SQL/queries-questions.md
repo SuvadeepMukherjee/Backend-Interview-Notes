@@ -864,6 +864,16 @@ FROM  employees
 ORDER BY departmentname ASC 
 ```
 
+The result will be the following: 
+
+| FirstName | Department |
+| --------- | ---------- |
+| Alice     | HR         |
+| NULL      | IT         |
+| Jane      | Marketing  |
+| John      | Sales      |
+| Bob       | Sales      |
+
 
 
 #### Q36:Write a SQL query to retrieve all employees and their department names, including employees without departments and departments without employees, using a FULL OUTER JOIN. Order the results by `LastName` in ascending order.
