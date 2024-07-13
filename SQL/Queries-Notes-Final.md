@@ -24,11 +24,11 @@ WHERE table1.column1 LIKE 'pattern%'
     AND table2.column2 LIKE '_pattern'
     OR table1.column3 > value
       AND NOT table1.column4 = value
-      AND table1.column5 IS NOT NULL
-      AND **MOD**(table1.column6, 2) = 0
+      AND table1.column5 IS  NULL
+      AND MOD(table1.column6, 2) = 0
 -- GROUP BY clause with aggregate function
 GROUP BY table1.column1
--- ORDER BY clause*
+-- ORDER BY clause
 ORDER BY table1.column3 DESC
 -- LIMIT and OFFSET for pagination
 LIMIT 10 offset 5; 
