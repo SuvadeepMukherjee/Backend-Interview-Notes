@@ -792,3 +792,42 @@ The result will be the following
 | Manoj   | IT        |
 | James   | HR        |
 | Michael | HR        |
+
+#### Q32:Write a query to fetch the child name and their age corresponding to their parent name ?
+
+*Family* table :
+
+| member_id | name    | age  | parent_id |
+| --------- | ------- | ---- | --------- |
+| F1        | David   | 4    | F5        |
+| F2        | Carol   | 10   | F5        |
+| F3        | Michael | 12   | F5        |
+| F4        | Johnson | 36   |           |
+| F5        | Morgan  | 40   | F6        |
+| F6        | Stewart | 70   |           |
+| F7        | Rohan   | 6    | F4        |
+| F8        | Asha    | 8    | F4        |
+
+**Answer**:The query is shown in the following table
+
+```sql
+SELECT
+  child.name as child_name,
+  child.age as child_age,
+  parent.name as parent_name,
+  parent.age as parent_age
+FROM
+  family as child
+  join family as parent on child.parent_id = parent.member_id;
+```
+
+The output would be the follwing
+
+| child_name | child_age | parent_name | parent_age |
+| ---------- | --------- | ----------- | ---------- |
+| David      | 4         | Morgan      | 40         |
+| Carol      | 10        | Morgan      | 40         |
+| Michael    | 12        | Morgan      | 40         |
+| Morgan     | 40        | Stewart     | 70         |
+| Rohan      | 6         | Johnson     | 36         |
+| Asha       | 8         | Johnson     | 36         |
