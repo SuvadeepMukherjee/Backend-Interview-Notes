@@ -46,7 +46,7 @@ OFFSET
   2;
 ```
 
-#### Q3: display the number of employees working in each region
+#### Q3: Write the SQL Query that display the region and the number  of employees working in each region
 
 Table name: `employees`
 
