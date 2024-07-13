@@ -1,8 +1,8 @@
-## These are all the final Notes on SQL Queries 
+## Questions  on SQL Queries 
 
 #### Q1: Write a generalized SQL Query 
 
-**Answer**: A generalized sql query incorporates the following 
+#### **Answer**: A generalized sql query incorporates the following 
 
 1. A statement to select specific columns from two tables, incorporating a join condition.
 2. A clause to filter records based on specific patterns, logical operators, non-null values, and a numeric function(WHERE clause with AND,OR,NOT,LIKE,MOD,IS NULL etc).
