@@ -829,8 +829,6 @@ The result will be the following
 
 #### Q34:Write a SQL query to retrieve all employees FirstName and their department names, including those employees who do not belong to any department, using a LEFT JOIN. Order the results by `LastName` in ascending order.
 
-
-
 **Answer**:The SQL Query is written below
 
 ```sql
@@ -842,11 +840,18 @@ FROM  employees
 ORDER BY lastname ASC 
 ```
 
+The result will be the following 
+
+| FirstName | Department |
+| --------- | ---------- |
+| Alice     | HR         |
+| John      | Sales      |
+| Bob       | Sales      |
+| Jane      | Marketing  |
+
 
 
 #### Q35:Write a SQL query to retrieve all departments and their employee FirstName, including those departments that do not have any employees, using a RIGHT JOIN. Order the results by `DepartmentName` in ascending order.
-
-
 
 **Answer**: The SQL Query is written below
 
