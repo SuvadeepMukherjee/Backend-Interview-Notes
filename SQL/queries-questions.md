@@ -152,7 +152,7 @@ OFFSET
   2;
 ```
 
-#### Q12(Q3)Write the SQL Query that display the region and the number of employees working in each region
+#### Q12:Write the SQL Query that display the region and the number of employees working in each region
 
 Table name: `employees`
 
@@ -175,7 +175,7 @@ GROUP BY
   region;
 ```
 
-#### Q13(Q4): Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
+#### Q13: Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
 
 Table name: `employees`
 
@@ -198,11 +198,9 @@ WHERE
   AND salary <= 100000;
 ```
 
-#### Q14(Q5)Given a table `Employee` having columns `empName` and `empId`, what will be the result of the SQL query below?
+#### Q14:Given a table `Employee` having columns `empName` and `empId`, what will be the result of the SQL query below?
 
 ```sql
-sql
-Copy code
 SELECT
   empName,
   empId
@@ -214,7 +212,7 @@ ORDER BY
 
 **Answer**: The query orders the result set by the `empId` column in ascending order because `ORDER BY 2` refers to the second column in the `SELECT` list, which is `empId`.
 
-#### Q15(Q6): Write an SQL query to delete the column `region` from the `employees` table.
+#### Q15: Write an SQL query to delete the column `region` from the `employees` table.
 
 **Example Scenario:**
 
@@ -236,7 +234,7 @@ ALTER TABLE employees
 DROP COLUMN region;
 ```
 
-#### Q16(Q7): Based on the employees table write a sql query to find the 7th highest salary
+#### Q16: Based on the employees table write a sql query to find the 7th highest salary
 
 **Table: employees**
 
