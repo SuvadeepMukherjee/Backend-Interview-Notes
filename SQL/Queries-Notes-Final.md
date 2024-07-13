@@ -241,3 +241,16 @@ DROP COLUMN region;
 | 7    | Grace   | 11000  |
 
 **Answer**: The SQL Query is written below
+
+```sql
+SELECT
+  salary
+FROM
+  employees
+ORDER BY
+  salary DESC
+LIMIT
+  1
+OFFSET
+  6;
+```
