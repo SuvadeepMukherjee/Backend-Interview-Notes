@@ -304,3 +304,12 @@ WHERE
 | 7    | Grace   | 26   |
 
 **Answer**: The SQL Query is shown below
+
+```sql
+SELECT
+  *
+FROM
+  students
+WHERE
+  MOD(id, 2) = 1;
+```
