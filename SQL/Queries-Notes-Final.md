@@ -147,4 +147,14 @@ Table name: `employees`
 | 3    | Bob    | 70000  | North  |
 | 4    | Amanda | 80000  | East   |
 
-**Answer**:
+**Answer**:The query is written below
+
+```sql
+SELECT
+  region,
+  COUNT(*) AS employee_count
+FROM
+  employees
+GROUP BY
+  region;
+```
