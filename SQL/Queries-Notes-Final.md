@@ -416,3 +416,24 @@ WHERE
   email IS NULL
   AND phone_number IS NULL;
 ```
+
+#### Q23(Q14):Given the `employees` table, write a SQL query to fetch the top five maximum salaries.
+
+
+
+**Table: employees**
+
+| id   | name    | salary |
+| ---- | ------- | ------ |
+| 1    | Alice   | 5000   |
+| 2    | Bob     | 6000   |
+| 3    | Charlie | 7000   |
+| 4    | David   | 8000   |
+| 5    | Eve     | 9000   |
+| 6    | Frank   | 10000  |
+| 7    | Grace   | 11000  |
+| 8    | Hank    | 12000  |
+| 9    | Ivy     | 13000  |
+| 10   | Jack    | 14000  |
+
+**Answer**: The SQL Querry is written below
