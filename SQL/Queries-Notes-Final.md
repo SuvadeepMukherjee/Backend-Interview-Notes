@@ -173,3 +173,13 @@ Table name: `employees`
 | 4    | Amanda | 80000  | East   |
 
 **Answer**: The query is written below
+
+```sql
+SELECT
+  name
+FROM
+  employees
+WHERE
+  salary >= 20000
+  AND salary <= 100000;
+```
