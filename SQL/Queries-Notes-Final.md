@@ -354,3 +354,16 @@ WHERE
 | 204     | "Crime and Punishment"   | Fyodor Dostoevsky   | Fiction         | 1866-12-22   |
 
 **Answer**: The SQL Query is shown below
+
+```sql
+SELECT
+  *
+FROM
+  books
+ORDER BY
+  book_id
+LIMIT
+  100
+OFFSET
+  104;
+```
