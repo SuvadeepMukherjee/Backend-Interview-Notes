@@ -103,7 +103,7 @@ WHERE column_name IS NOT NULL;
 | right join      | *inner join + additional records from right table*           | select column_name(s) from table1 right join table2 on table1.column_name = table2.column_name; |
 | full outer join | *inner join + left join + right join*                        | select column_name(s) from table1 full outer join table2 on table1.column_name = table2.column_name; |
 | cross join      | Cartesian Product of 2 tables                                | select column_name(s) from table1 cross join table2;         |
-| natural join    | Cross Join + Condition sql will decide the join condition based on common table name(INNER JOIN) | select column_name(s) from table1 natural JOIN table2;       |
+| natural join    | Cross Join + Condition (sql will decide the join condition based on common table name mostly INNER JOIN) | select column_name(s) from table1 natural JOIN table2;       |
 | self join       | The table joins itself (Can be INNER JOIN,LEFT JOIN,RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN ,NATURAL JOIN) | syntax can vary                                              |
 
 #### Q10: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below
