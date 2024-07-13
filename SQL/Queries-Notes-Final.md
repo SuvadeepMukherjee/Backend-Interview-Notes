@@ -316,8 +316,6 @@ WHERE
 
 #### Q22(Q11):Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
 
-
-
 **Table: employees**
 
 | id   | name    | department |
@@ -340,3 +338,19 @@ FROM
 WHERE
   department = 'ECE';
 ```
+
+#### Q23(Q12):Given the `books` table, write a SQL query to return 100 books starting from the 105th book.
+
+**Table: books**
+
+| book_id | title                    | author              | genre           | publish_date |
+| ------- | ------------------------ | ------------------- | --------------- | ------------ |
+| 101     | "The Great Gatsby"       | F. Scott Fitzgerald | Fiction         | 1925-04-10   |
+| 102     | "To Kill a Mockingbird"  | Harper Lee          | Fiction         | 1960-07-11   |
+| 103     | "1984"                   | George Orwell       | Science Fiction | 1949-06-08   |
+| 104     | "Pride and Prejudice"    | Jane Austen         | Romance         | 1813-01-28   |
+| 105     | "The Catcher in the Rye" | J.D. Salinger       | Fiction         | 1951-07-16   |
+| ...     | ...                      | ...                 | ...             | ...          |
+| 204     | "Crime and Punishment"   | Fyodor Dostoevsky   | Fiction         | 1866-12-22   |
+
+**Answer**: The SQL Query is shown below
