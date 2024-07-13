@@ -263,7 +263,7 @@ OFFSET
   6;
 ```
 
-#### Q17(Q8): Given the `employees` table, write a SQL query to add a new column named `department` to the table.
+#### Q17: Given the `employees` table, write a SQL query to add a new column named `department` to the table.
 
 #### **Table: employees**
 
@@ -284,7 +284,7 @@ ALTER TABLE employees
 ADD COLUMN department VARCHAR(50);
 ```
 
-#### Q18(Q9):Given the `students` table, write a SQL query to display the records with odd `id` values.
+#### Q18:Given the `students` table, write a SQL query to display the records with odd `id` values.
 
 **Table: students**
 
@@ -309,7 +309,7 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
-#### Q19(10):Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
+#### Q19:Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
 
 **Table: students**
 
@@ -334,7 +334,7 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
-#### Q20(Q11):Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
+#### Q20:Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
 
 **Table: employees**
 
@@ -359,7 +359,7 @@ WHERE
   department = 'ECE';
 ```
 
-#### Q21(Q12):Given the `books` table, write a SQL query to return 100 books starting from the 105th book.
+#### Q21:Given the `books` table, write a SQL query to return 100 books starting from the 105th book.
 
 **Table: books**
 
@@ -385,12 +385,10 @@ ORDER BY
 LIMIT
   100
 OFFSET
-  104;
+  5;
 ```
 
-#### Q22(Q13): Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
-
-
+#### Q22: Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
 
 **Table: users**
 
@@ -415,9 +413,9 @@ WHERE
   AND phone_number IS NULL;
 ```
 
-#### Q23(Q14):Given the `employees` table, write a SQL query to fetch the top five maximum salaries.
+#### Q23:Given the `employees` table, write a SQL query to fetch the top five maximum salaries.
 
-**Table: employees**
+#### **Table: employees**
 
 | id   | name    | salary |
 | ---- | ------- | ------ |
@@ -445,7 +443,7 @@ LIMIT
   5;
 ```
 
-#### Q24(Q15):Given the `employees` table, write a SQL query to get the second last `id` without using the `MAX` function.
+#### Q24:Given the `employees` table, write a SQL query to get the second last `id` without using the `MAX` function.
 
 **Table: employees**
 
@@ -477,9 +475,9 @@ OFFSET
   1;
 ```
 
-#### Q25(Q16):Given the `employees` table, write a SQL query to find out the data of employees whose age is between 25 and 35 inclusive.
+#### Q25:Given the `employees` table, write a SQL query to find out the data of employees whose age is between 25 and 35 inclusive.
 
-**Table: employees**
+#### **Table: employees**
 
 | id   | name    | age  |
 | ---- | ------- | ---- |
@@ -506,9 +504,7 @@ WHERE
   AND age <= 35;
 ```
 
-#### Q26(Q2): Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.
-
-
+#### Q26: Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.
 
 employee Table:
 
@@ -543,8 +539,6 @@ from
   inner join department on employee.dept_id = department.dept_id
 ```
 
-
-
 The result will be the following
 
 | Name    | dept_name |
@@ -554,9 +548,9 @@ The result will be the following
 | James   | HR        |
 | Michael | HR        |
 
-#### Q27(Q3):Given the employee and department tables, write an sql query to retrieve the employee names along with their respective department names, including employees whose department names are not known.
+#### Q27:Given the employee and department tables, write an sql query to retrieve the employee names along with their respective department names, including employees whose department names are not known.
 
-#### employee Table:
+employee Table:
 
 | emp_id | emp_name | salary | dept_id | manager_id |
 | ------ | -------- | ------ | ------- | ---------- |
