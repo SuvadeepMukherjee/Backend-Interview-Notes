@@ -640,7 +640,7 @@ The output will be the following
 | NULL     | Finance   |
 | NULL     | Admin     |
 
-#### Q29(Q6): Given the Employee and Department tables, write an SQL query to retrieve the employee names and their respective departments ,If an employee does not have an department ouput NULL , similarly if a department does not have employees output null
+#### Q29: Given the Employee and Department tables, write an SQL query to retrieve the employee names and their respective departments ,If an employee does not have an department ouput NULL , similarly if a department does not have employees output null
 
 Employee Table:
 
