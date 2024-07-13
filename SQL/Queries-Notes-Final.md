@@ -649,3 +649,146 @@ The output will be the following
 | Michael  | HR        |
 | NULL     | Finance   |
 | NULL     | Admin     |
+
+#### Q29(Q6): Given the Employee and Department tables, write an SQL query to retrieve the employee names and their respective departments ,If an employee does not have an department ouput NULL , similarly if a department does not have employees output null
+
+Employee Table:
+
+| emp_id | emp_name | salary | dept_id | manager_id |
+| ------ | -------- | ------ | ------- | ---------- |
+| E1     | Rahul    | 15000  | D1      | M1         |
+| E2     | Manoj    | 15000  | D1      | M1         |
+| E3     | James    | 55000  | D2      | M2         |
+| E4     | Michael  | 25000  | D2      | M2         |
+| E5     | Ali      | 20000  | D10     | M3         |
+| E6     | Robin    | 35000  | D10     | M3         |
+
+Department Table:
+
+| dept_id | dept_name |
+| ------- | --------- |
+| D1      | IT        |
+| D2      | HR        |
+| D3      | Finance   |
+| D4      | Admin     |
+
+Write the SQL Query
+
+**Answer**: The SQL Query is written below
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name
+FROM
+  employee e
+  FULL OUTER JOIN department d ON d.dept_id = e.dept_id;
+```
+
+The output will be the follwing:
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| Ali      | NULL      |
+| Robin    | NULL      |
+| NULL     | Finance   |
+| NULL     | Admin     |
+
+#### Q30:Write a query to fetch the Employee table and their corresponding department name .Also make sure to display the company name and the company location corresponding to each employee. The Employee ,Department and Company tables are given below
+
+Employee Table:
+
+| emp_id | emp_name | salary | dept_id | manager_id |
+| ------ | -------- | ------ | ------- | ---------- |
+| E1     | Rahul    | 15000  | D1      | M1         |
+| E2     | Manoj    | 15000  | D1      | M1         |
+| E3     | James    | 55000  | D2      | M2         |
+| E4     | Michael  | 25000  | D2      | M2         |
+| E5     | Ali      | 20000  | D10     | M3         |
+| E6     | Robin    | 35000  | D10     | M3         |
+
+Department Table:
+
+| dept_id | dept_name |
+| ------- | --------- |
+| D1      | IT        |
+| D2      | HR        |
+| D3      | Finance   |
+| D4      | Admin     |
+
+Company table:
+
+| Company_id | company_name      | Location     |
+| ---------- | ----------------- | ------------ |
+| C001       | techTFQ Solutions | Kuala lumpur |
+
+**Answer**:We write the follwing query
+
+```sql
+SELECT
+  e.emp_name,
+  d.dept_name,
+  c.company_name,
+  c.location
+FROM
+  empoyee e
+  INNER JOIN department d ON e.dept_id = d.dept_id
+  CROSS JOIN company c;
+```
+
+The output will be the following :
+
+| emp_name | dept_name | comapny_name      | Location     |
+| -------- | --------- | ----------------- | ------------ |
+| Rahul    | IT        | techTFQ Solutions | kuala lampur |
+| Manoj    | IT        | techTFQ Solutions | kuala lampur |
+| James    | HR        | techTFQ Solutions | kuala lampur |
+| Michael  | HR        | techTFQ Solutions | kuala lampur |
+
+#### Q31: Given the Employee and Department tables, write an SQL query to retrieve the employee names along with their respective department names, but only for those employees whose department names are known.You cannot use `INNER JOIN`
+
+employee Table:
+
+| emp_id | emp_name | salary | dept_id | manager_id |
+| ------ | -------- | ------ | ------- | ---------- |
+| E1     | Rahul    | 15000  | D1      | M1         |
+| E2     | Manoj    | 15000  | D1      | M1         |
+| E3     | James    | 55000  | D2      | M2         |
+| E4     | Michael  | 25000  | D2      | M2         |
+| E5     | Ali      | 20000  | D10     | M3         |
+| E6     | Robin    | 35000  | D10     | M3         |
+
+department Table:
+
+| dept_id | dept_name |
+| ------- | --------- |
+| D1      | IT        |
+| D2      | HR        |
+| D3      | Finance   |
+| D4      | Admin     |
+
+Write the SQL query below:
+
+**Answer**: The SQL Query is written below
+
+```sql
+select
+  emp_name,
+  dept_name
+from
+  employee
+  NATURAL join department 
+```
+
+The result will be the following
+
+| Name    | dept_name |
+| ------- | --------- |
+| Rahul   | IT        |
+| Manoj   | IT        |
+| James   | HR        |
+| Michael | HR        |
