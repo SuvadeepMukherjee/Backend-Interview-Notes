@@ -158,3 +158,18 @@ FROM
 GROUP BY
   region;
 ```
+
+#### Q12(Q4): Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
+
+
+
+Table name: `employees`
+
+| id   | name   | salary | region |
+| ---- | ------ | ------ | ------ |
+| 1    | John   | 50000  | North  |
+| 2    | Alice  | 60000  | South  |
+| 3    | Bob    | 70000  | North  |
+| 4    | Amanda | 80000  | East   |
+
+**Answer**: The query is written below
