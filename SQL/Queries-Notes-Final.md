@@ -437,3 +437,14 @@ WHERE
 | 10   | Jack    | 14000  |
 
 **Answer**: The SQL Querry is written below
+
+```sql
+SELECT
+  salary
+FROM
+  employees
+ORDER BY
+  salary DESC
+LIMIT
+  5;
+```
