@@ -106,3 +106,17 @@ FROM
 WHERE
   name LIKE 'A%';
 ```
+
+#### Q10:Write a SQL query to get the third maximum salary using `OFFSET`.The *Employees* table is given below
+
+
+
+| id   | name   | salary |
+| ---- | ------ | ------ |
+| 1    | John   | 50000  |
+| 2    | Alice  | 60000  |
+| 3    | Bob    | 70000  |
+| 4    | Amanda | 80000  |
+| 5    | Andrew | 90000  |
+
+**Answer**: The sql query is written below
