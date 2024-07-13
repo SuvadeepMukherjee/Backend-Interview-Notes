@@ -89,7 +89,7 @@ WHERE column_name IS NOT NULL;
 
 | MySQL Functions | Syntax             | defination                                                  |
 | --------------- | ------------------ | ----------------------------------------------------------- |
-| MOD             | Mod()              | returns the remainder of a number divided by another number |
+| MOD             | Mod(x,y)           | returns the remainder of a number divided by another number |
 | ISNULL          | ISNULL(expression) | returns 1 or 0 depending whether an expression is `NULL`    |
 
 #### Q9: In a tabular format write the defination of all the joins i.e inner join , left join , right join , full outer join ,cross join , natural join , self join and their syntax
