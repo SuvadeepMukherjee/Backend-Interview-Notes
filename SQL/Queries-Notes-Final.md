@@ -288,3 +288,19 @@ FROM
 WHERE
   MOD(id, 2) = 1;
 ```
+
+#### Q21(10):Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
+
+**Table: students**
+
+| id   | name    | age  |
+| ---- | ------- | ---- |
+| 1    | Alice   | 20   |
+| 2    | Bob     | 21   |
+| 3    | Charlie | 22   |
+| 4    | David   | 23   |
+| 5    | Eve     | 24   |
+| 6    | Frank   | 25   |
+| 7    | Grace   | 26   |
+
+**Answer**: The SQL Query is shown below
