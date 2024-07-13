@@ -5,10 +5,10 @@
 **Answer**: A generalized sql query incorporates the following 
 
 1. A statement to select specific columns from two tables, incorporating a join condition.
-2. A clause to filter records based on specific patterns, logical operators, non-null values, and a numeric function.
-3. A clause to group the results by one or more columns.
-4. A clause to sort the results.
-5. Clauses to limit the number of results and specify an offset for pagination.
+2. A clause to filter records based on specific patterns, logical operators, non-null values, and a numeric function(WHERE clause with AND,OR,NOT,LIKE,MOD,IS NULL etc).
+3. A clause to group the results by one or more columns.(GROUP BY clause often used with aggregate functions).
+4. A clause to sort the results(ORDER BY clause)
+5. Clauses to limit the number of results and specify an offset for pagination(LIMIT And OFFSET).
 
 A sample query is shown below 
 
