@@ -331,3 +331,12 @@ WHERE
 | 7    | Grace   | CSE        |
 
 **Answer**: The sql query is written below
+
+```sql
+SELECT
+  *
+FROM
+  employees
+WHERE
+  department = 'ECE';
+```
