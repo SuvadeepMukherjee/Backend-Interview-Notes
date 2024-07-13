@@ -254,3 +254,26 @@ LIMIT
 OFFSET
   6;
 ```
+
+#### Q19(Q8): Given the `employees` table, write a SQL query to add a new column named `department` to the table.
+
+
+
+**Table: employees**
+
+| id   | name    | salary |
+| ---- | ------- | ------ |
+| 1    | Alice   | 5000   |
+| 2    | Bob     | 6000   |
+| 3    | Charlie | 7000   |
+| 4    | David   | 8000   |
+| 5    | Eve     | 9000   |
+| 6    | Frank   | 10000  |
+| 7    | Grace   | 11000  |
+
+**Answer**: The SQL Query is written below:
+
+```sql
+ALTER TABLE employees
+ADD COLUMN department VARCHAR(50);
+```
