@@ -627,3 +627,25 @@ department Table:
 | D4      | Admin     |
 
 Write the SQL query below:
+
+The sql Query is written below:
+
+```sql
+select
+  e.emp_name,
+  d.dept_name
+from
+  employee e
+  right join department d on e.dept_id = d.dept_Id
+```
+
+The output will be the following
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| NULL     | Finance   |
+| NULL     | Admin     |
