@@ -70,3 +70,16 @@ LIMIT 10 offset 5;
 | MOD             | Mod()              | returns the remainder of a number divided by another number |
 | ISNULL          | ISNULL(expression) | returns 1 or 0 depending whether an expression is `NULL`    |
 
+#### Q8: In a tabular format write the defination of all the joins i.e inner join , left join , right join , full outer join ,cross join , natural join , self join and their syntax
+
+**Answer**:The following table explains all the types of joins and their corresponding syntax
+
+| Join            | Definition                                                   | Syntax                                                       |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| inner join      | *Fetches matching records only*                              | select column_name(s) from table1 inner join table2 on table1.column_name = table2.column_name; |
+| left join       | *inner join + additional records from left table*            | select column_name(s) from table1 left join table2 on table1.column_name = table2.column_name; |
+| right join      | *inner join + additional records from right table*           | select column_name(s) from table1 right join table2 on table1.column_name = table2.column_name; |
+| full outer join | *inner join + left join + right join*                        | select column_name**(s) from table1 full outer join table2 on table1.column_name = table2.column_name; |
+| cross join      | Cartesian Product of 2 tables                                | select column_name**(s) from table1 cross join table2;       |
+| natural join    | Cross Join + Condition sql will decide the join condition based on common table name(INNER JOIN) | select column_name**(s) from table1 natural JOIN table2;     |
+| self join       | The table joins itself (Can be INNER JOIN,LEFT JOIN,RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN ,NATURAL JOIN) | syntax can vary                                              |
