@@ -581,3 +581,23 @@ department Table:
 Write the SQL query below:
 
 **Answer**: The sql Query is written below:
+
+```sql
+select
+  e.emp_name,
+  d.dept_name
+from
+  employee e
+  left join department d on e.dept_id = d.dept_Id
+```
+
+The output will be the following :
+
+| emp_name | dept_name |
+| -------- | --------- |
+| Rahul    | IT        |
+| Manoj    | IT        |
+| James    | HR        |
+| Michael  | HR        |
+| Ali      | NULL      |
+| Robin    | NULL      |
