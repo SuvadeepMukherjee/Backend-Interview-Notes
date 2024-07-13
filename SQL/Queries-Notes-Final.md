@@ -47,11 +47,33 @@ LIMIT 10 offset 5;
 
 **Answer**:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default, it sorts in ascending order. To sort in descending order, use the `DESC` keyword.
 
-#### Q4:What is the purpose of the `LIMIT` and `OFFSET` clauses in SQL?
+#### Q4:How to test for NULL Values ? 
+
+**Answer**:We will have to use the `IS NULL` and `IS NOT NULL` operators instead.
+
+`IS NULL` Syntax: 
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+```
+
+`IS NOT NULL` Syntax: 
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+```
+
+
+
+#### Q5:What is the purpose of the `LIMIT` and `OFFSET` clauses in SQL?
 
 **Answer**:The `LIMIT` clause specifies the number of records to return. The `OFFSET` clause skips a specified number of rows before starting to return rows from the query result.
 
-#### Q5:What are SQL aggregate functions and where are they commonly used ? 
+#### Q6:What are SQL aggregate functions and where are they commonly used ? 
 
 **Answer**: Aggregate functions perform a calculation on a set of values and return a single value. They are often used with the `GROUP BY` clause to group the result set by one or more columns.
 
@@ -59,18 +81,18 @@ LIMIT 10 offset 5;
 
 - `COUNT()`: Returns the number of rows that match a specified criterion.
 
-#### Q6:How does the `GROUP BY` statement work in SQL?
+#### Q7:How does the `GROUP BY` statement work in SQL?
 
 **Answer**:The `GROUP BY` statement groups rows that have the same values into summary rows. It is often used with aggregate functions like `COUNT()`, `MAX()`, `MIN()`, `SUM()`, and `AVG()`.
 
-#### Q7:MySQL Functions 
+#### Q8:MySQL Functions 
 
 | MySQL Functions | Syntax             | defination                                                  |
 | --------------- | ------------------ | ----------------------------------------------------------- |
 | MOD             | Mod()              | returns the remainder of a number divided by another number |
 | ISNULL          | ISNULL(expression) | returns 1 or 0 depending whether an expression is `NULL`    |
 
-#### Q8: In a tabular format write the defination of all the joins i.e inner join , left join , right join , full outer join ,cross join , natural join , self join and their syntax
+#### Q9: In a tabular format write the defination of all the joins i.e inner join , left join , right join , full outer join ,cross join , natural join , self join and their syntax
 
 **Answer**:The following table explains all the types of joins and their corresponding syntax
 
@@ -84,7 +106,7 @@ LIMIT 10 offset 5;
 | natural join    | Cross Join + Condition sql will decide the join condition based on common table name(INNER JOIN) | select column_name(s) from table1 natural JOIN table2;       |
 | self join       | The table joins itself (Can be INNER JOIN,LEFT JOIN,RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN ,NATURAL JOIN) | syntax can vary                                              |
 
-#### Q9: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below
+#### Q10: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below
 
 | id   | name   | age  |
 | ---- | ------ | ---- |
@@ -105,7 +127,7 @@ WHERE
   name LIKE 'A%';
 ```
 
-#### Q10:Write a SQL query to get the third maximum salary using `OFFSET`.The *Employees* table is given below
+#### Q11:Write a SQL query to get the third maximum salary using `OFFSET`.The *Employees* table is given below
 
 | id   | name   | salary |
 | ---- | ------ | ------ |
@@ -130,7 +152,7 @@ OFFSET
   2;
 ```
 
-#### Q11(Q3)Write the SQL Query that display the region and the number of employees working in each region
+#### Q12(Q3)Write the SQL Query that display the region and the number of employees working in each region
 
 Table name: `employees`
 
@@ -153,7 +175,7 @@ GROUP BY
   region;
 ```
 
-#### Q12(Q4): Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
+#### Q13(Q4): Write a SQL query to fetch employee names having a salary greater than or equal to 20000 and less than or equal to 100000 from the `employees` table.
 
 Table name: `employees`
 
@@ -176,7 +198,7 @@ WHERE
   AND salary <= 100000;
 ```
 
-#### Q13(Q5)Given a table `Employee` having columns `empName` and `empId`, what will be the result of the SQL query below?
+#### Q14(Q5)Given a table `Employee` having columns `empName` and `empId`, what will be the result of the SQL query below?
 
 ```sql
 sql
@@ -192,7 +214,7 @@ ORDER BY
 
 **Answer**: The query orders the result set by the `empId` column in ascending order because `ORDER BY 2` refers to the second column in the `SELECT` list, which is `empId`.
 
-#### Q17(Q6): Write an SQL query to delete the column `region` from the `employees` table.
+#### Q15(Q6): Write an SQL query to delete the column `region` from the `employees` table.
 
 **Example Scenario:**
 
@@ -214,7 +236,7 @@ ALTER TABLE employees
 DROP COLUMN region;
 ```
 
-#### Q18(Q7): Based on the employees table write a sql query to find the 7th highest salary
+#### Q16(Q7): Based on the employees table write a sql query to find the 7th highest salary
 
 **Table: employees**
 
@@ -243,7 +265,7 @@ OFFSET
   6;
 ```
 
-#### Q19(Q8): Given the `employees` table, write a SQL query to add a new column named `department` to the table.
+#### Q17(Q8): Given the `employees` table, write a SQL query to add a new column named `department` to the table.
 
 #### **Table: employees**
 
@@ -264,7 +286,7 @@ ALTER TABLE employees
 ADD COLUMN department VARCHAR(50);
 ```
 
-#### Q20(Q9):Given the `students` table, write a SQL query to display the records with odd `id` values.
+#### Q18(Q9):Given the `students` table, write a SQL query to display the records with odd `id` values.
 
 **Table: students**
 
@@ -289,7 +311,7 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
-#### Q21(10):Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
+#### Q19(10):Given the `students` table, write a SQL query to fetch alternate records (e.g., records with odd `id` values).
 
 **Table: students**
 
@@ -314,7 +336,7 @@ WHERE
   MOD(id, 2) = 1;
 ```
 
-#### Q22(Q11):Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
+#### Q20(Q11):Given the `employees` table, write a SQL query to display details of employees who belong to the ECE department.
 
 **Table: employees**
 
@@ -339,7 +361,7 @@ WHERE
   department = 'ECE';
 ```
 
-#### Q23(Q12):Given the `books` table, write a SQL query to return 100 books starting from the 105th book.
+#### Q21(Q12):Given the `books` table, write a SQL query to return 100 books starting from the 105th book.
 
 **Table: books**
 
@@ -368,7 +390,7 @@ OFFSET
   104;
 ```
 
-#### Q24(Q13): Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
+#### Q22(Q13): Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
 
 
 
