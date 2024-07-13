@@ -83,3 +83,17 @@ LIMIT 10 offset 5;
 | cross join      | Cartesian Product of 2 tables                                | select column_name(s) from table1 cross join table2;         |
 | natural join    | Cross Join + Condition sql will decide the join condition based on common table name(INNER JOIN) | select column_name(s) from table1 natural JOIN table2;       |
 | self join       | The table joins itself (Can be INNER JOIN,LEFT JOIN,RIGHT JOIN ,FULL OUTER JOIN ,CROSS JOIN ,NATURAL JOIN) | syntax can vary                                              |
+
+#### Q9: Write a SQL Query that fetches the names of students whose name starts with A .The *students* table is given below
+
+
+
+| id   | name   | age  |
+| ---- | ------ | ---- |
+| 1    | Alice  | 20   |
+| 2    | Bob    | 22   |
+| 3    | Amanda | 19   |
+| 4    | John   | 21   |
+| 5    | Andrew | 23   |
+
+**Answer**:
