@@ -223,3 +223,21 @@ Table name: `employees`
 ALTER TABLE employees
 DROP COLUMN region;
 ```
+
+#### Q18(Q7): Based on the employees table write a sql query to find the 7th highest salary
+
+
+
+**Table: employees**
+
+| id   | name    | salary |
+| ---- | ------- | ------ |
+| 1    | Alice   | 5000   |
+| 2    | Bob     | 6000   |
+| 3    | Charlie | 7000   |
+| 4    | David   | 8000   |
+| 5    | Eve     | 9000   |
+| 6    | Frank   | 10000  |
+| 7    | Grace   | 11000  |
+
+**Answer**: The SQL Query is written below
