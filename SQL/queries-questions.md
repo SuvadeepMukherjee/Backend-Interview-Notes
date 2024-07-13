@@ -805,8 +805,6 @@ The result will be the following
 
 #### Q33:Write a SQL query to retrieve all employees FirstName along with their department names using an INNER JOIN. Order the results by `LastName` in ascending order.
 
-
-
 **Answer**: The SQL Query is provided below
 
 ```sql
@@ -817,6 +815,15 @@ FROM  employees
         ON employees.departmentid = departments.departmentid
 ORDER BY lastname ASC 
 ```
+
+The result will be the following 
+
+| FirstName | Department |
+| --------- | ---------- |
+| Alice     | HR         |
+| John      | Sales      |
+| Bob       | Sales      |
+| Jane      | Marketing  |
 
 
 
