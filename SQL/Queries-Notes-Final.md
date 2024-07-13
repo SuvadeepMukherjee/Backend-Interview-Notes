@@ -120,3 +120,16 @@ WHERE
 | 5    | Andrew | 90000  |
 
 **Answer**: The sql query is written below
+
+```sql
+SELECT
+  salary
+FROM
+  employees
+ORDER BY
+  salary DESC
+LIMIT
+  1
+OFFSET
+  2;
+```
