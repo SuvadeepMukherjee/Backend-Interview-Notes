@@ -384,3 +384,13 @@ OFFSET
 | 6       | frank78   | [frank@email.com](mailto:frank@email.com)     | 8765432109   |
 
 **Answer**: The SQL Query is written below
+
+```sql
+SELECT
+  *
+FROM
+  users
+WHERE
+  email IS NULL
+  AND phone_number IS NULL;
+```
