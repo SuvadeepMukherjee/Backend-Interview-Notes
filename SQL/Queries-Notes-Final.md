@@ -183,3 +183,19 @@ WHERE
   salary >= 20000
   AND salary <= 100000;
 ```
+
+#### Q13(Q5)Given a table `Employee` having columns `empName` and `empId`, what will be the result of the SQL query below?
+
+```sql
+sql
+Copy code
+SELECT
+  empName,
+  empId
+FROM
+  Employee
+ORDER BY
+  2 ASC;
+```
+
+**Answer**: The query orders the result set by the `empId` column in ascending order because `ORDER BY 2` refers to the second column in the `SELECT` list, which is `empId`.
