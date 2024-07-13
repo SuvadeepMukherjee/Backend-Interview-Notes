@@ -34,7 +34,7 @@ ORDER BY table1.column3 DESC
 LIMIT 10 offset 5; 
 ```
 
-#### Q2:What is the purpose of the `LIKE`operator ins SQL ? 
+#### Q2:What is the purpose of the `LIKE` operator ins SQL ? 
 
 **Answer**:The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.
 
@@ -43,7 +43,7 @@ LIMIT 10 offset 5;
 - `%` represents zero, one, or multiple characters
 - `_` represents one single character
 
-#### Q3:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default, it sorts in what  order ?
+#### Q3:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default it sorts in what  order ?
 
 **Answer**:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default, it sorts in ascending order. To sort in descending order, use the `DESC` keyword.
 
