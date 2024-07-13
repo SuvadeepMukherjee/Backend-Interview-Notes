@@ -1,20 +1,16 @@
 ## These are all the final Notes on SQL Queries 
 
-#### Q1: You are required to demonstrate your understanding of various SQL clauses and functions by writing a generalized SQL query that includes the following components:
+#### Q1: Write a generalized SQL Query 
 
-1. A **SELECT** statement with an **INNER JOIN** between two tables.
-2. A WHERE clause that includes:
-   - A condition with the **LIKE** operator using both '%' and '_' patterns.
-   - Logical operators **AND**, **OR**, and **NOT**.
-   - A check for null values using **IS  NULL**.
-   - A condition that uses the **MOD()** numeric function.
-3. A **GROUP BY** clause.
-4. An **ORDER BY** clause that sorts the result set.
-5. Pagination using **LIMIT** and **OFFSET**.
+**Answer**: A generalized sql query incorporates the following 
 
-Write a general SQL query that incorporates all of the above components.
+1. A statement to select specific columns from two tables, incorporating a join condition.
+2. A clause to filter records based on specific patterns, logical operators, non-null values, and a numeric function.
+3. A clause to group the results by one or more columns.
+4. A clause to sort the results.
+5. Clauses to limit the number of results and specify an offset for pagination.
 
-**Answer**: The SQL query is written below 
+A sample query is shown below 
 
 ```sql
 -- SELECT statement with JOIN*
