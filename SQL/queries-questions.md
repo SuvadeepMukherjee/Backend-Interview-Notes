@@ -688,7 +688,7 @@ The output will be the follwing:
 | NULL     | Finance   |
 | NULL     | Admin     |
 
-#### Q30:Write a query to fetch the Employee table and their corresponding department name .Also make sure to display the company name and the company location corresponding to each employee. The Employee ,Department and Company tables are given below
+#### Q30:Given the Employee , Department and Company tables write a query that retrieves the emp_name along with their respective dept_name but only for those employees whose department names are known also make sure to display the company_name and location 
 
 Employee Table:
 
