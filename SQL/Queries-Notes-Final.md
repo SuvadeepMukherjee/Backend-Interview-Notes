@@ -34,3 +34,39 @@ ORDER BY table1.column3 DESC
 LIMIT 10 offset 5; 
 ```
 
+#### Q2:What is the purpose of the `LIKE`operator ins SQL ? 
+
+**Answer**:The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.
+
+**Wildcards**:
+
+- `%` represents zero, one, or multiple characters
+- `_` represents one single character
+
+#### Q3:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default, it sorts in what  order ?
+
+**Answer**:The `ORDER BY` keyword is used to sort the result set in ascending or descending order. By default, it sorts in ascending order. To sort in descending order, use the `DESC` keyword.
+
+#### Q4:What is the purpose of the `LIMIT` and `OFFSET` clauses in SQL?
+
+**Answer**:The `LIMIT` clause specifies the number of records to return. The `OFFSET` clause skips a specified number of rows before starting to return rows from the query result.
+
+#### Q5:What are SQL aggregate functions and where are they commonly used ? 
+
+**Answer**: Aggregate functions perform a calculation on a set of values and return a single value. They are often used with the `GROUP BY` clause to group the result set by one or more columns.
+
+**Common Aggregate Functions**:
+
+- `COUNT()`: Returns the number of rows that match a specified criterion.
+
+#### Q6:How does the `GROUP BY` statement work in SQL?
+
+**Answer**:The `GROUP BY` statement groups rows that have the same values into summary rows. It is often used with aggregate functions like `COUNT()`, `MAX()`, `MIN()`, `SUM()`, and `AVG()`.
+
+#### Q7:MySQL Functions 
+
+| MySQL Functions | Syntax             | defination                                                  |
+| --------------- | ------------------ | ----------------------------------------------------------- |
+| MOD             | Mod()              | returns the remainder of a number divided by another number |
+| ISNULL          | ISNULL(expression) | returns 1 or 0 depending whether an expression is `NULL`    |
+
