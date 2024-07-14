@@ -874,11 +874,7 @@ The result will be the following:
 | John      | Sales      |
 | Bob       | Sales      |
 
-
-
 #### Q36:Write a SQL query to retrieve all employees and their department names, including employees without departments and departments without employees, using a FULL OUTER JOIN. Order the results by `LastName` in ascending order.
-
-
 
 **Answer**: The SQL Query is written below
 
@@ -891,11 +887,7 @@ FROM  employees
 ORDER BY lastname ASC 
 ```
 
-
-
 #### Q37:Create an index on the `age` column on the `Students` table shown below
-
-
 
 **students**
 

@@ -71,7 +71,7 @@
 1. **Increased Storage Space:** Indexes require additional storage space on disk or in memory to store the index structures, which can increase storage requirements for the database.
 2. **Overhead on Data Modification:** Indexes need to be updated whenever data in the indexed columns is inserted, updated, or deleted. This overhead can slow down data modification operations (INSERT, UPDATE, DELETE).
 
-#### Q13:If we drop a table, does it also drop related objects like constraints, indexes, columns, default, views and sorted procedures?
+#### Q13:If we drop a table, does it also drop related objects like constraints, indexes, columns,  views and sorted procedures?
 
 **Answer**: Yes 
 
@@ -84,14 +84,14 @@
 | `IN`      | Checks if a value matches any value in a list | Matches any value in the specified list.                     |
 | `BETWEEN` | Checks if a value is within a range           | Checks if a value falls within the specified range inclusive. |
 
-#### Q15:What is ACID in realtion to databases ?
+#### Q15:What is ACID in relation to databases ?
 
 **Answer**:The following table explains the ACID properties of database transactions in a table format:
 
 | ACID Property   | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
 | **Atomicity**   | Ensures that each transaction is treated as a single unit, either fully completed (committed) or fully aborted (rolled back) if an error occurs. |
-| **Consistency** | Guarantees that a transaction brings the database from one valid state to another valid state. |
+| **Consistency** | Gurantees that a transaction brings the database from one valid state to another valid state. |
 | **Isolation**   | Ensures that transactions are executed independently and are unaware of other transactions running concurrently. |
 | **Durability**  | Once a transaction is committed, its changes are permanently saved and can withstand system failures. |
 
@@ -131,7 +131,7 @@
 
 1. **One to One Relationship**  say between a customers table (holding username and password) and the customers_details table(holding all the details of the customer )
 2. **One To Many Relationship**  say between a customers table and a orders table , a customer can have many orders while each order belongs to a particular customer
-3. **Many to Many Relationship**  say between a books table and a authors table, a book can have multiple authors and an author can have multiple books
+3. **Many to Many Relationship**  say between a books table and an authors table, a book can have multiple authors and an author can have multiple books
 
 #### Q21:What are DELETE , DROP And Truncate Keywords in SQL ? 
 
@@ -149,7 +149,7 @@
 
 | Term     | Definition                                                   |
 | -------- | ------------------------------------------------------------ |
-| Subquery | A query nested inside another query. It can be used in SELECT, INSERT, UPDATE, or DELETE statements or inside other subqueries. |
+| Subquery | A query nested inside another query.                         |
 | Types    | 1. **Single-row Subquery**: Returns one row. <br> 2. **Multiple-row Subquery**: Returns multiple rows. <br> 3. **Correlated Subquery**: Depends on the outer query. |
 
 ### Example
