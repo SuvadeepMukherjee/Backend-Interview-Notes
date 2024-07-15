@@ -33,7 +33,7 @@
 
 | Constraint Type | Definition                              | Example                                                      |
 | --------------- | --------------------------------------- | ------------------------------------------------------------ |
-| Primary Key     | Ensures each row is uniquely identified | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>); |
+| Primary Key     | Ensures each row is uniquely identified | ```CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>);``` |
 |                 |                                         |                                                              |
 |                 |                                         |                                                              |
 |                 |                                         |                                                              |
