@@ -90,10 +90,10 @@
 
 | ACID Property   | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
-| **Atomicity**   | Ensures that each transaction is treated as a single unit, either fully completed (committed) or fully aborted (rolled back) if an error occurs. |
-| **Consistency** | Gurantees that a transaction brings the database from one valid state to another valid state. |
-| **Isolation**   | Ensures that transactions are executed independently and are unaware of other transactions running concurrently. |
-| **Durability**  | Once a transaction is committed, its changes are permanently saved and can withstand system failures. |
+| **Atomicity**   | All operations in a transaction are treated as one unit.     |
+| **Consistency** | Database remains in a consistent state after the transaction. |
+| **Isolation**   | Transactions do not interfere with each other.               |
+| **Durability**  | Changes from committed transactions are permanent            |
 
 #### Q16:What is a *deadlock* in SQL ? 
 
