@@ -31,6 +31,16 @@
 
 ### Q7:List 5 Constraint types and their definations 
 
+| Constraint Type | Definition                              | Example                                                      |
+| --------------- | --------------------------------------- | ------------------------------------------------------------ |
+| Primary Key     | Ensures each row is uniquely identified | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>); |
+|                 |                                         |                                                              |
+|                 |                                         |                                                              |
+|                 |                                         |                                                              |
+|                 |                                         |                                                              |
+
+
+
 | Constraint Type | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
 | Primary Key     | Ensures each row in *uniquely identified*                    |
