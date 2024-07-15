@@ -20,8 +20,6 @@ For browser-based conversion of these .md format files to PDF format, I recommen
   - [User Defined Modules](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Node/user-defined-modules.md) 
   - [Miscellenous Topics](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Node/misc.md)
 
-
-
 - Express.js
   - [Basics](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/basics.md)
   - [Middleware](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/express/middleware.md)
@@ -35,19 +33,12 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 - ORM-ODM
 
   - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/ORM-ODM/questions.md)
-
 - MongoDB
 
   - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/MongoDB/Questions.md)
-
 - Database Engineering
 
   - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Database-Engineering/questions.md)
-
-- Miscellaneous Questions
-
-  - [Error Handling and Debugging](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/Error-handling-and-debugging.md)
-  - [Security,performance and Deployment](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/security-performance-and-deployment.md)
 - Questions on Commonly used libraries 
 
   - [Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/Project%20Based%20Questions/Questions.md)
@@ -55,6 +46,10 @@ For browser-based conversion of these .md format files to PDF format, I recommen
 
   - [SQL Queries](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/SQL/queries-questions.md)
   - [SQL Theoretical Questions](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/SQL/theory.md)
+- Miscellaneous Questions
+
+  - [Error Handling and Debugging](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/Error-handling-and-debugging.md)
+  - [Security,performance and Deployment](https://github.com/SuvadeepMukherjee/Backend-Interview-Notes/blob/main/misc-topics/security-performance-and-deployment.md)
 
 
 
