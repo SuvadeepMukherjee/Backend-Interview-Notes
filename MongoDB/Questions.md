@@ -12,7 +12,6 @@
 - **Flexibility:** Schema-less design allows for easy handling of varying data structures.
 - **Performance:** High-speed read and write operations.
 - **Replication:** Built-in replication for high availability and redundancy.
-- **Rich Query Language:** Powerful querying and aggregation capabilities.
 - **Document-Oriented:** Stores data in JSON-like documents, making it intuitive to use.
 
 #### Q3:What format does MongoDB store data in ?
