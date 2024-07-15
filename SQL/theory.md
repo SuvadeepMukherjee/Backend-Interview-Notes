@@ -79,10 +79,10 @@
 
 **Answer**: The following table lists the difference between IN and BETWEEN operator 
 
-| Operator  | Description                                   | Key Difference                                               |
+| Operator  | Description                                   | Example                                                      |
 | --------- | --------------------------------------------- | ------------------------------------------------------------ |
-| `IN`      | Checks if a value matches any value in a list | Matches any value in the specified list.                     |
-| `BETWEEN` | Checks if a value is within a range           | Checks if a value falls within the specified range inclusive. |
+| `IN`      | Checks if a value matches any value in a list | SELECT * FROM students <br>WHERE student_id IN (1, 3, 5, 7);<br>This query retrieves all students whose `student_id` is either 1, 3, 5, or 7. |
+| `BETWEEN` | Checks if a value is within a range           | SELECT name from students WHERE age betwee 10 and 15<br>Find students between the ages of 10 and 15 |
 
 #### Q15:What is ACID in relation to databases ?
 
