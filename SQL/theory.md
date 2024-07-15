@@ -81,8 +81,8 @@
 
 | Operator  | Description                                   | Example                                                      |
 | --------- | --------------------------------------------- | ------------------------------------------------------------ |
-| `IN`      | Checks if a value matches any value in a list | SELECT * FROM students <br>WHERE student_id IN (1, 3, 5, 7);<br>This query retrieves all students whose `student_id` is either 1, 3, 5, or 7. |
-| `BETWEEN` | Checks if a value is within a range           | SELECT name from students WHERE age betwee 10 and 15<br>Find students between the ages of 10 and 15 |
+| `IN`      | Checks if a value matches any value in a list | SELECT * FROM students <br>WHERE student_id IN (1, 3, 5, 7);<br><br>This query retrieves all students whose `student_id` is either 1, 3, 5, or 7. |
+| `BETWEEN` | Checks if a value is within a range           | SELECT name from students WHERE age betwee 10 and 15<br><br>Find students between the ages of 10 and 15 |
 
 #### Q15:What is ACID in relation to databases ?
 
