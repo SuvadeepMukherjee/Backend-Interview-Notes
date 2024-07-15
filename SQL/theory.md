@@ -31,23 +31,13 @@
 
 ### Q7:List 5 Constraint types and their definations 
 
-| Constraint Type | Definition                              | Example                                                      |
-| --------------- | --------------------------------------- | ------------------------------------------------------------ |
-| Primary Key     | Ensures each row is uniquely identified | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>); |
-| Foreign Key     | Links 2 tables                          | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>);<br />CREATE TABLE enrollments (  <br>  enrollment_id INT PRIMARY KEY,  <br>  student_id INT,   <br>     FOREIGN KEY (student_id) REFERENCES students(student_id),  <br>   ); |
-|                 |                                         |                                                              |
-|                 |                                         |                                                              |
-|                 |                                         |                                                              |
-
-
-
-| Constraint Type | Definition                                                   |
-| --------------- | ------------------------------------------------------------ |
-| Primary Key     | Ensures each row in *uniquely identified*                    |
-| Foreign Key     | *Links two tables*                                           |
-| Unique          | *Ensures values in a column are unique*                      |
-| Check           | *Imposes conditions on data values allowed in a column for each row* |
-| Not Null        | *Requires a column to always have a value* , preventing NULL entries |
+| Constraint Type | Definition                                                   | Example                                                      |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Primary Key     | Ensures each row is uniquely identified                      | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>); |
+| Foreign Key     | Links 2 tables                                               | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>);<br />CREATE TABLE enrollments (  <br>  enrollment_id INT PRIMARY KEY,  <br>  student_id INT,   <br>     FOREIGN KEY (student_id) REFERENCES students(student_id),  <br>   ); |
+| Unique          | Ensures values in a column are unique                        | CREATE TABLE employees (<br/>    employee_id INT PRIMARY KEY,<br/>    email VARCHAR(100) UNIQUE,<br/>    phone_number VARCHAR(15) UNIQUE<br/>); |
+| Check           | Ensures that all values in a column satisfy a specific condition. | CREATE TABLE products (<br/>    product_id INT PRIMARY KEY,<br/>    price DECIMAL(10, 2),<br/>    stock_quantity INT,<br/>    CHECK (price > 0),<br/>    CHECK (stock_quantity >= 0)<br/>); |
+| NOT NULL        | Ensures that a column cannot have a null value               | CREATE TABLE orders (<br/>    order_id INT PRIMARY KEY,<br/>    order_date DATE NOT NULL,<br/>    customer_id INT NOT NULL<br/>); |
 
 ###  Q8: Primary Key vs Unique ? 
 
