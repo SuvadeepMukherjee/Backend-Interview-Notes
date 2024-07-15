@@ -33,8 +33,8 @@
 
 | Constraint Type | Definition                              | Example                                                      |
 | --------------- | --------------------------------------- | ------------------------------------------------------------ |
-| Primary Key     | Ensures each row is uniquely identified | ```CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>);``` |
-|                 |                                         |                                                              |
+| Primary Key     | Ensures each row is uniquely identified | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>); |
+| Foreign Key     | Links 2 tables                          | CREATE TABLE students (<br/>    student_id INT PRIMARY KEY,<br/>    name VARCHAR(100),<br/>    age INT<br/>);<br />CREATE TABLE enrollments (  <br>  enrollment_id INT PRIMARY KEY,  <br>  student_id INT,   <br>     FOREIGN KEY (student_id) REFERENCES students(student_id),  <br>   ); |
 |                 |                                         |                                                              |
 |                 |                                         |                                                              |
 |                 |                                         |                                                              |
