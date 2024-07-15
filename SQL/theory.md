@@ -88,7 +88,7 @@
 
 **Answer**:The following table explains the ACID properties of database transactions in a table format:
 
-| ACID Property   | Description                                                  |
+| Property        | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
 | **Atomicity**   | All operations in a transaction are treated as one unit.     |
 | **Consistency** | Database remains in a consistent state after the transaction. |
