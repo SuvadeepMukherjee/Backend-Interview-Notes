@@ -385,7 +385,7 @@ ORDER BY
 LIMIT
   100
 OFFSET
-  5;
+  104;
 ```
 
 #### Q22: Given the `users` table, write a SQL query to select all users whose email and phone_number are both NULL.
